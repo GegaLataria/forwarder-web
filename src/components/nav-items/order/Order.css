@@ -1,0 +1,35 @@
+.order {
+    margin-top: 7rem;
+    background-color: #FEBDAC;
+    padding: 5rem 2rem;
+    border-radius: 2rem;
+}
+
+.order__text {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.order__contact {
+    display: flex;
+    justify-content:space-around;
+}
+
+.order__contact__item {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.587);
+    width: 40rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.youtube {
+    display: block;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    width: 80%;
+    transform: translate(15%, 0%);
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,54 @@
+.categories {
+    margin-top: 4rem;
+}
+
+.categories__list {
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.categories__list__item {
+    width: 30%;
+    background:rgba(81, 81, 81, 0.05) 0% 0% no-repeat padding-box;
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.shops-section {
+    margin-top: 7rem;
+}
+
+.shops-section__title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.shops-section__list {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.shops-section__list__item {
+    width: 30%;
+    background: rgba(253, 133, 103, 0.2) 0% 0% no-repeat padding-box;
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.shops-section__list__item__link:link,
+.shops-section__list__item__link:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 3rem;
+}

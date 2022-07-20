@@ -1,0 +1,13 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0 1rem;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgba(250, 235, 215, 0.309);
+}

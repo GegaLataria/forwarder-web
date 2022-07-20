@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route } from 'react-router-dom';
-import Header from "./Header";
-import Home from "./nav-items/Home";
-import Flights from "./nav-items/Flights";
-import FAQ from "./nav-items/FAQ";
-import Order from "./nav-items/Order";
-import Shops from "./nav-items/Shops";
-import Contact from "./nav-items/Contact";
-import Login from "./nav-items/Login";
+import Header from "./header/Header";
+import Home from "./nav-items/home/Home";
+import Flights from "./nav-items/flights/Flights";
+import FAQ from "./nav-items/faq/FAQ";
+import Order from "./nav-items/order/Order";
+import Shops from "./nav-items/shops/Shops";
+import Contact from "./nav-items/contact/Contact";
+import Login from "./nav-items/login/Login";
+import './App.css';
 
 
 
@@ -38,9 +39,8 @@ const App = () => {
                     <Route path="/login">
                         <Login/>
                     </Route>
-
-
             </BrowserRouter>
+            
         </div>
     );
 };

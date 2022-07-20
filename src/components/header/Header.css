@@ -2,6 +2,7 @@
 .topnav {
     background-color: rgba(51, 51, 51, 0.8);
     overflow: hidden;
+    border-radius: 0.5rem;
   }
   
   /* Style the links inside the navigation bar */
