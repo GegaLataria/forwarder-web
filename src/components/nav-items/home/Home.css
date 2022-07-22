@@ -1,21 +1,7 @@
-/* * {
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%;
-    margin: 0 1rem;
-}
-
-body {
-    box-sizing: border-box;
-} */
-
 .box {
     height: 30rem;
     background-color: #FEBDAC;
     border-radius: 2rem;
-    /* position: relative; */
 }
 
 .box-home {

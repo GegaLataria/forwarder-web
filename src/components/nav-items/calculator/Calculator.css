@@ -10,7 +10,7 @@
 
 .calculator__item__input {
     width: 25%;
-    
+    line-height: 200%;
     border-radius: .5rem;
     background-color: rgb(255, 241, 237);
 }
