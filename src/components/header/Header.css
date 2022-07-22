@@ -10,9 +10,9 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 1.14vw;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2vw;
   }
   
   /* Change the color of links on hover */
@@ -29,6 +29,6 @@
 
   #login {
     float: right;
-    margin-right: 20px;
+    margin-right: 1.4vw;
   }
 

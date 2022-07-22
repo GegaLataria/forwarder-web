@@ -1,13 +1,13 @@
 .box {
-    height: 30rem;
+    height: 18.8vw;
     background-color: #FEBDAC;
     border-radius: 2rem;
 }
 
 .box-home {
     text-align: center;
-    font-size: 3.2rem;
-    padding: 90px 50px 100px 50px;
+    font-size: 2vw;
+    padding: 5.6vw 3.1rem;
     margin-top: 2rem;
     position:relative;
     color:#fff
@@ -18,9 +18,9 @@
     text-decoration: none;
     border-radius: 5rem;
     position: absolute;
-    padding: 2rem 3rem;
+    padding: 1.2vw 1.8vw;
     transform: translate(-50%, -50%);
-    margin-top: 6rem;
+    margin-top: 3.8vw;
 }
 
 #shops-btn:link,
@@ -32,15 +32,14 @@
 .desciption-box {
     display: flex;
     position: absolute;
-    margin-top: 10rem;
-    font-size: 3.2rem;
-    /* width: 50vw; */
-    margin-left: 2rem;
+    margin-top: 6.2vw;
+    font-size: 2vw;
+    margin-left: 1.3rem;
 }
 
 .column{
     flex: 50%;
-    padding: 1rem;
+    padding: 0.6vw;
 }
 
 .desc-h {
@@ -56,9 +55,8 @@
     text-decoration: none;
     border-radius: 5rem;
     position: absolute;
-    padding: 2rem 3rem;
-    /* transform: translate(-50%, -50%); */
-    margin-top: 2rem;
+    padding: 1.2vw 1.85vw;
+    margin-top: 1.2vw;
 }
 
 #get-more-btn:link,
@@ -67,7 +65,7 @@
 }
 
 .platform-shop {
-    margin-top: 7rem;
+    margin-top: 4.4vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -78,9 +76,16 @@
 .platform-shop__item {
     width: 48%;
     background: #FFF1EC 0% 0% no-repeat padding-box;
-    padding: 3rem;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.85vw;
+    border-radius: 1.2vw;
+    margin-bottom: 1.2vw;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.platform-shop__item:hover {
+    background-color: #FD8467;
 }
 
 .platform-shop__item figure {
@@ -94,24 +99,23 @@
 }
 
 .flights {
-    /* position: absolute; */
-    margin-top: 75rem;
-    font-size: 3.2rem;
-    margin-left: 2rem;
+    margin-top: 47vw;
+    font-size: 2vw;
+    margin-left: 1.2vw;
 }
 
 .flights_column {
     flex: 100%;
-    padding: 1rem;
+    padding: .6vw;
 }
 
 
 .flights_box {
     display: inline-block;
     width: 30vw;
-    margin-right: 1rem;
-    margin-top: 7rem;
-    margin-left: 0.7rem;
+    margin-right: .6vw;
+    margin-top: 4.4vw;
+    margin-left: .4vw;
     align-items: center;
     justify-content: space-between;
     text-align: center;
@@ -120,9 +124,10 @@
 .flights_box_item {
     width: 100%;
     background: rgba(81, 81, 81, 0.05) 0% 0% no-repeat padding-box;
-    padding: 3rem;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+    padding: 1.85vw;
+    border-radius: .6vw;
+    margin-bottom: 1.2vw;
+    font-size: 2.5vw;
 }
 
 .map-box {
@@ -133,8 +138,8 @@
 .contact-info {
     text-align: center;
     align-content:flex-end;
-    font-size: 2rem;
-    margin-top: 12rem;
+    font-size: 1.2vw;
+    margin-top: 7.5vw;
 }
 
 
