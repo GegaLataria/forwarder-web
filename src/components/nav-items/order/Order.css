@@ -1,12 +1,12 @@
 .order {
-    margin-top: 7rem;
+    margin-top: 4.4vw;
     background-color: #FEBDAC;
-    padding: 5rem 2rem;
-    border-radius: 2rem;
+    padding: 3.1vw 1.2vw;
+    border-radius: 1.2vw;
 }
 
 .order__text {
-    font-size: 3rem;
+    font-size: 1.85vw;
     color: rgba(0, 0, 0, 0.65);
 }
 
@@ -16,18 +16,18 @@
 }
 
 .order__contact__item {
-    font-size: 2rem;
+    font-size: 1.2vw;
     background: rgba(255, 255, 255, 0.587);
-    width: 40rem;
+    width: 25vw;
     text-align: center;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin-left: .6vw;
 }
 
 .youtube {
     display: block;
-    margin-top: 4rem;
-    margin-left: 4rem;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
     width: 80%;
     transform: translate(15%, 0%);
     margin-left: auto;

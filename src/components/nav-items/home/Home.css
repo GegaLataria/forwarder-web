@@ -135,6 +135,15 @@
     
 }
 
+.column-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+    padding: 0.6vw;
+    transform: translate(0, -15%);
+}
+
 .contact-info {
     text-align: center;
     align-content:flex-end;

@@ -1,11 +1,11 @@
 
 .calculator__title {
-    font-size: 2.5rem;
+    font-size: 1.6vw;
     color: #FD8467;
 }
 
 .calculator__item {
-    font-size: 1.5rem;
+    font-size: .9vw;
 }
 
 .calculator__item__input {
@@ -16,15 +16,15 @@
 }
 
 .calculator__button {
-    margin-top: 1rem;
+    margin-top: .6vw;
     border-radius: .5rem;
     background-color: #FD8467;
     border-color: #FD8467;
     color:#FFF;
-    padding: 1rem 3rem;
+    padding: .6vw 1.85vw;
 }
 
 #weight-result {
-    font-size: 2rem;
+    font-size: 1.2vw;
     font-weight: 700;
 }

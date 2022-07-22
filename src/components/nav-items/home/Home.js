@@ -68,7 +68,7 @@ const buildHomeScreen = () => {
                 <div className="column">
                     <WebMap />
                 </div>
-                <div className="column">
+                <div className="column-contact">
                     <div className="contact-info">
                         <h1>მის: ლორთქიფანიძის 26</h1>
                         <h1>ტელ: 555123456</h1>
