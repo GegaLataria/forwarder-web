@@ -82,6 +82,9 @@
     cursor: pointer;
     text-align: center;
     font-size: 2vw;
+
+    /* newly added */
+    text-decoration: none;
 }
 
 .platform-shop__item:hover {

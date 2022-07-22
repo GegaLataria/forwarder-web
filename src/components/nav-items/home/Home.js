@@ -22,11 +22,18 @@ const buildHomeScreen = () => {
                 </div>
                 <div className="column">
                     <div className="platform-shop">
-                        <div className="platform-shop__item">
+                        {/* <div className="platform-shop__item">
                             <figure>
                                 <a className="platform-shop_link" href="https://trendyol.com" target="_blank" rel="noreferrer">Trendyol</a>
                             </figure>
-                        </div>
+                        </div> */}
+
+                        {/* newly added */}
+                        <a className="platform-shop__item" href="https://trendyol.com" target="_blank" rel="noreferrer">
+                            <p className="platform-shop__link">Trendyol</p>
+                        </a>
+
+
                         <div className="platform-shop__item">
                             <figure>
                                 <a className="platform-shop_link" href="https://Hepsiburada.com" target="_blank" rel="noreferrer">Hepsiburada</a>
