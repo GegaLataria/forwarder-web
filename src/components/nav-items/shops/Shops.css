@@ -3,7 +3,7 @@
 }
 
 .categories__list {
-    margin-top: 7rem;
+    margin-top: 4.4vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -14,9 +14,9 @@
 .categories__list__item {
     width: 30%;
     background:rgba(81, 81, 81, 0.05) 0% 0% no-repeat padding-box;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.25vw;
+    border-radius: 1.25vw;
+    margin-bottom: 1.25vw;
 }
 
 .categories__list__item:hover {
@@ -26,16 +26,16 @@
 
 
 .shops-section {
-    margin-top: 7rem;
+    margin-top: 4.4vw;
 }
 
 .shops-section__title {
-    font-size: 3rem;
+    font-size: 1.85vw;
     text-align: center;
 }
 
 .shops-section__list {
-    margin-top: 1rem;
+    margin-top: 0.6vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -46,14 +46,14 @@
 .shops-section__list__item {
     width: 30%;
     background: rgba(253, 133, 103, 0.2) 0% 0% no-repeat padding-box;
-    padding: 3rem;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.85vw;
+    border-radius: 1.25vw;
+    margin-bottom: 1.25vw;
 }
 
 .shops-section__list__item__link:link,
 .shops-section__list__item__link:visited {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.65);
-    font-size: 2rem;
+    font-size: 1.25vw;
 }

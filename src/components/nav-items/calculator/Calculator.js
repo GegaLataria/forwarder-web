@@ -6,25 +6,15 @@ const Calculator = () => {
     return <div>{buildCalculatorScreen()}</div>
 };
 
-const validateNumber = (a) => {
-    if(typeof(a) === 'number'){
-        return true;
-    }
-    return false;
-};
 
 const handleClick = (event) => {
     let lengthInput = Number(document.getElementById("length-input").value);
     let widthInput = Number(document.getElementById("width-input").value);
     let heightInput = Number(document.getElementById("height-input").value);
-    if(validateNumber(lengthInput) && validateNumber(widthInput) && validateNumber(heightInput)){
-        let convertToRealWeight = (lengthInput*widthInput*heightInput)/6000;
-        let finalResult = (Math.round((convertToRealWeight+Number.EPSILON)*100)/100);
-        document.getElementById("weight-result").innerHTML = finalResult + " კგ";
-    }
-    
-    
-    
+    let convertToRealWeight = (lengthInput*widthInput*heightInput)/6000;
+    let finalResult = (Math.round((convertToRealWeight+Number.EPSILON)*100)/100);
+    document.getElementById("weight-result").innerHTML = finalResult + " კგ";
+     
 };
 
 const buildCalculatorScreen = () => {
@@ -36,15 +26,15 @@ const buildCalculatorScreen = () => {
                 </div>
                 <div className="calculator__item">
                     <p>სიგრძე(სმ)</p>
-                    <input type="text" id="length-input" className="calculator__item__input" name="length"/>
+                    <input type="number" id="length-input" className="calculator__item__input" name="length"/>
                 </div>
                 <div className="calculator__item">
                     <p>სიგანე(სმ)</p>
-                    <input type="text" id="width-input" className="calculator__item__input" name="width"/>
+                    <input type="number" id="width-input" className="calculator__item__input" name="width"/>
                 </div>
                 <div className="calculator__item">
                     <p>სიმაღლე(სმ)</p>
-                    <input type="text" id="height-input" className="calculator__item__input" name="height"/>
+                    <input type="number" id="height-input" className="calculator__item__input" name="height"/>
                 </div>
                 <div>
                     <button onClick={handleClick} className="calculator__button">გამოთვლა</button>
