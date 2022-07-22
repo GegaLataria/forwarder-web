@@ -12,32 +12,32 @@ const buildShopsScreen = () => {
             <section className="categories">
                 <div className="categories__list">
                     <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id">
+                        <a className="shops-section__list__item__link" href="?id=1">
                             <h4>ტანსაცმელი</h4>
                         </a>
                     </div>
                     <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id">
+                        <a className="shops-section__list__item__link" href="?id=2">
                             <h4>სათამაშოები</h4>
                         </a>
                     </div>
                     <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id">
+                        <a className="shops-section__list__item__link" href="?id=3">
                             <h4>ავტონაწილები</h4>
                         </a>
                     </div>
                     <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id">
+                        <a className="shops-section__list__item__link" href="?id=4">
                             <h4>სამკაული</h4>
                         </a>
                     </div>
                     <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id">
+                        <a className="shops-section__list__item__link" href="?id=5">
                             <h4>სილამაზე</h4>
                         </a>
                     </div>
                     <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id">
+                        <a className="shops-section__list__item__link" href="?id=6">
                             <h4>საყოფაცხოვრებო</h4>
                         </a>
                     </div>

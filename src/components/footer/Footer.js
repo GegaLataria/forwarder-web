@@ -14,13 +14,13 @@ const buildFooter = () => {
                     <Link to="/" className="footer__box__item__link">მთავარი</Link>
                     <Link to="/faq" className="footer__box__item__link">FAQ</Link>
                     <Link to="/how-to-order" className="footer__box__item__link">როგორ შევუკვეთო?</Link>
-                    <Link to="/flights" className="footer__box__item__link">რეისი</Link>
+                    <Link to="/calculator" className="footer__box__item__link">კალკულატორი</Link>
                     <Link to="/shops" className="footer__box__item__link">მაღაზიები</Link>
                     <Link to="/terms-and-conditions" className="footer__box__item__link">წესები და პირობები</Link>
                 </div>
             </div>
             <div className="footer__rights">
-                <p>@2021 წ, ყველა უფლება დაცულია</p>
+                <p>@2022 წ, ყველა უფლება დაცულია</p>
             </div>
         </div>
     );

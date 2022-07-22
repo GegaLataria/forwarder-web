@@ -22,7 +22,7 @@ const Header = () => {
             <Link id="main" onClick={handleClick} className="active" to="/">მთავარი</Link>
             <Link id="faq" onClick={handleClick} to="/faq">FAQ</Link>
             <Link id="order" onClick={handleClick} to="/how-to-order">როგორ შევუკვეთო?</Link>
-            <Link id="flights" onClick={handleClick} to="/flights">რეისები</Link>
+            <Link id="flights" onClick={handleClick} to="/calculator">კალკულატორი</Link>
             <Link id="shops" onClick={handleClick} to="/shops">მაღაზიები</Link>
             <Link id="contact" onClick={handleClick} to="/contact">კონტაქტი</Link>
             <Link id="login" onClick={handleClick} to="/login">შესვლა</Link>

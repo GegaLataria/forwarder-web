@@ -1,0 +1,30 @@
+
+.calculator__title {
+    font-size: 2.5rem;
+    color: #FD8467;
+}
+
+.calculator__item {
+    font-size: 1.5rem;
+}
+
+.calculator__item__input {
+    width: 25%;
+    
+    border-radius: .5rem;
+    background-color: rgb(255, 241, 236);
+}
+
+.calculator__button {
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background-color: #FD8467;
+    border-color: #FD8467;
+    color:#FFF;
+    padding: 1rem 3rem;
+}
+
+#weight-result {
+    font-size: 2rem;
+    font-weight: 700;
+}
