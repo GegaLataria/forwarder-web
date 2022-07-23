@@ -12,36 +12,24 @@ const buildFaqScreen = () => {
         <div>
             <section className="categories">
                 <div className="categories__list">
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=1">
-                            <h4>დეკლარაცია</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=2">
-                            <h4>განბაჟება</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=3">
-                            <h4>ტრანსპორტირება</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=4">
-                            <h4>გამოწერა</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=5">
-                            <h4>გადახდა</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=6">
-                            <h4>საკურიერო მომსახურება</h4>
-                        </a>
-                    </div>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">დეკლარაცია</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">განბაჟება</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">ტრანსპორტირება</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">გამოწერა</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">გადახდა</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">საკურიერო მომსახურება</h4>
+                    </a>
                 </div>
             </section>
             <section className="questions-bar">

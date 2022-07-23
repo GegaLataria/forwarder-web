@@ -28,13 +28,22 @@ const buildHomeScreen = () => {
                             </figure>
                         </div> */}
 
-                        {/* newly added */}
+                        {/* newly added  it works!!!!*/}
                         <a className="platform-shop__item" href="https://trendyol.com" target="_blank" rel="noreferrer">
                             <p className="platform-shop__link">Trendyol</p>
                         </a>
+                        <a className="platform-shop__item" href="https://Hepsiburada.com" target="_blank" rel="noreferrer">
+                            <p className="platform-shop__link">Hepsiburada</p>
+                        </a>
+                        <a className="platform-shop__item" href="https://penti.com" target="_blank" rel="noreferrer">
+                            <p className="platform-shop__link">Penti</p>
+                        </a>
+                        <a className="platform-shop__item" href="https://puma.com" target="_blank" rel="noreferrer">
+                            <p className="platform-shop__link">Puma</p>
+                        </a>
 
 
-                        <div className="platform-shop__item">
+                        {/* <div className="platform-shop__item">
                             <figure>
                                 <a className="platform-shop_link" href="https://Hepsiburada.com" target="_blank" rel="noreferrer">Hepsiburada</a>
                             </figure>
@@ -48,7 +57,7 @@ const buildHomeScreen = () => {
                             <figure>
                                 <a className="platform-shop_link" href="https://puma.com" target="_blank" rel="noreferrer">Puma</a>
                             </figure>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

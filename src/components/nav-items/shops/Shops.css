@@ -11,17 +11,18 @@
     text-align: center;
 }
 
-.categories__list__item {
+.categories__list__item{
     width: 30%;
     background:rgba(81, 81, 81, 0.05) 0% 0% no-repeat padding-box;
     padding: 1.25vw;
     border-radius: 1.25vw;
     margin-bottom: 1.25vw;
+    text-decoration: none;
 }
 
 .categories__list__item:hover {
     cursor: pointer;
-    background-color: #FD8467;
+    background-color: rgba(81, 81, 81, 0.3);
 }
 
 
@@ -49,11 +50,14 @@
     padding: 1.85vw;
     border-radius: 1.25vw;
     margin-bottom: 1.25vw;
+    text-decoration: none;
 }
 
-.shops-section__list__item__link:link,
-.shops-section__list__item__link:visited {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.65);
+.shops-section__list__item:hover {
+    background-color: #FD8467;
+}
+
+.shops-section__list__item__link{
+    color: rgba(0, 0, 0, 0.6);
     font-size: 1.25vw;
 }

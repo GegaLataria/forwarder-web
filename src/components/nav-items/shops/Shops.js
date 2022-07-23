@@ -11,36 +11,24 @@ const buildShopsScreen = () => {
         <div>
             <section className="categories">
                 <div className="categories__list">
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=1">
-                            <h4>ტანსაცმელი</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=2">
-                            <h4>სათამაშოები</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=3">
-                            <h4>ავტონაწილები</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=4">
-                            <h4>სამკაული</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=5">
-                            <h4>სილამაზე</h4>
-                        </a>
-                    </div>
-                    <div className="categories__list__item">
-                        <a className="shops-section__list__item__link" href="?id=6">
-                            <h4>საყოფაცხოვრებო</h4>
-                        </a>
-                    </div>
+                    <a className="categories__list__item" href="?id=1">
+                        <h4 className="shops-section__list__item__link">ტანსაცმელი</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=2">
+                        <h4 className="shops-section__list__item__link">სათამაშოები</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=3">
+                        <h4 className="shops-section__list__item__link">ავტონაწილები</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=4">
+                        <h4 className="shops-section__list__item__link">სამკაული</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=5">
+                        <h4 className="shops-section__list__item__link">სილამაზე</h4>
+                    </a>
+                    <a className="categories__list__item" href="?id=6">
+                        <h4 className="shops-section__list__item__link">საყოფაცხოვრებო</h4>
+                    </a>
                 </div>
             </section>
             <section className="shops-section">
@@ -48,51 +36,52 @@ const buildShopsScreen = () => {
                     <h2>მაღაზიები</h2>
                 </div>
                 <div className="shops-section__list">
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
-                    <div className="shops-section__list__item">
-                        <a className="shops-section__list__item__link" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">Trendyol</a>
-                    </div>
+
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
+                    <a className="shops-section__list__item" href="https://www.trendyol.com/butik/liste/1/kadin" target="_blank" rel="noreferrer">
+                        <h4 className="shops-section__list__item__link">Trendyol</h4>
+                    </a>
                 </div>
             </section>
             <section>
