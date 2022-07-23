@@ -9,13 +9,15 @@ const Header = () => {
     const [selected, setSelected] = useState('');
     useEffect(() => {
         const currentItem = document.getElementById(location.pathname);
-        if(currentItem.classList.contains("active")){
-            currentItem.classList.remove("active");
+        if(currentItem !== null){
+            if(currentItem.classList.contains("active")){
+                currentItem.classList.remove("active");
+            }
+            
+            setSelected(currentItem);
+            currentItem.classList.add("active");
         }
-        
-        setSelected(currentItem);
-        currentItem.classList.add("active");
-    },[location]);
+        },[location]);
     const handleClick = event => {        
         if(selected !== event.target && selected){
             selected.classList.remove("active");
