@@ -31,9 +31,9 @@ const buildOrderScreen = () => {
             </section>
             <section className="youtube">
             <iframe
+                className="youtube__link"
                 src="https://www.youtube.com/embed/E7wJTI-1dvQ"
                 width={'70%'}
-                height={'500px'}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen

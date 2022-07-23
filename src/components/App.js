@@ -8,8 +8,8 @@ import Order from "./nav-items/order/Order";
 import Shops from "./nav-items/shops/Shops";
 import Contact from "./nav-items/contact/Contact";
 import Login from "./nav-items/login/Login";
+import Conditions from "./terms-and-cond/Conditions";
 import './App.css';
-
 
 
 
@@ -18,7 +18,7 @@ const App = () => {
         <div>
             <BrowserRouter>
                     <Header/>
-                    <Route exact path="/">
+                    <Route exact path="/main">
                         <Home/>
                     </Route>
                     <Route path="/faq">
@@ -38,6 +38,9 @@ const App = () => {
                     </Route>
                     <Route path="/login">
                         <Login/>
+                    </Route>
+                    <Route path="/terms-and-conditions">
+                        <Conditions/>
                     </Route>
             </BrowserRouter>
             

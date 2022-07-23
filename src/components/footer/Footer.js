@@ -1,22 +1,38 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
-    return <div>{buildFooter()}</div>
-};
+    const location = useLocation();
+    const [selected, setSelected] = useState('');
+    useEffect(() => {
+        const currentItem = document.getElementById(location.pathname);
+        if(currentItem.classList.contains("active")){
+            currentItem.classList.remove("active");
+        }
+        
+        setSelected(currentItem);
+        currentItem.classList.add("active");
+    },[location]);
+    const handleClick = event => {        
+        if(selected !== event.target && selected){
+            selected.classList.remove("active");
+        }
+        setSelected(event.target);
+        event.target.classList.add("active");
+        
+    }
 
-const buildFooter = () => {
     return (
         <div className="footer">
             <div className="footer__box">
                 <div className="footer__box__item">
-                    <Link to="/" className="footer__box__item__link">მთავარი</Link>
-                    <Link to="/faq" className="footer__box__item__link">FAQ</Link>
-                    <Link to="/how-to-order" className="footer__box__item__link">როგორ შევუკვეთო?</Link>
-                    <Link to="/calculator" className="footer__box__item__link">კალკულატორი</Link>
-                    <Link to="/shops" className="footer__box__item__link">მაღაზიები</Link>
-                    <Link to="/terms-and-conditions" className="footer__box__item__link">წესები და პირობები</Link>
+                    <Link to="/main" className="footer__box__item__link" onClick={handleClick}>მთავარი</Link>
+                    <Link to="/faq" className="footer__box__item__link" onClick={handleClick}>FAQ</Link>
+                    <Link to="/how-to-order" className="footer__box__item__link" onClick={handleClick}>როგორ შევუკვეთო?</Link>
+                    <Link to="/calculator" className="footer__box__item__link" onClick={handleClick}>კალკულატორი</Link>
+                    <Link to="/shops" className="footer__box__item__link" onClick={handleClick}>მაღაზიები</Link>
+                    <Link to="/terms-and-conditions" className="footer__box__item__link" onClick={handleClick}>წესები და პირობები</Link>
                 </div>
             </div>
             <div className="footer__rights">
