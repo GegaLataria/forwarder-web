@@ -10,6 +10,7 @@ import Contact from "./nav-items/contact/Contact";
 import Login from "./nav-items/login/Login";
 import Conditions from "./terms-and-cond/Conditions";
 import './App.css';
+import Footer from "./footer/Footer";
 
 
 
@@ -18,6 +19,9 @@ const App = () => {
         <div>
             <BrowserRouter>
                     <Header/>
+                    <div>
+
+                    
                     <Route exact path="/main">
                         <Home/>
                     </Route>
@@ -42,6 +46,9 @@ const App = () => {
                     <Route path="/terms-and-conditions">
                         <Conditions/>
                     </Route>
+
+                    </div>
+                    <Footer/>
             </BrowserRouter>
             
         </div>
