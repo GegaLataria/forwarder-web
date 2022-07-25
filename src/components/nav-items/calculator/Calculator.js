@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../footer/Footer";
 import "./Calculator.css";
 
 const Calculator = () => {
@@ -41,10 +40,6 @@ const buildCalculatorScreen = () => {
                     <p id="weight-result"></p>
                 </div>
             </section>    
-        
-            <section>
-                <Footer/>
-            </section>
         </div>
     );
 };

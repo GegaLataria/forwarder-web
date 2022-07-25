@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../footer/Footer";
 import "./Conditions.css";
 
 const Conditions = () => {
@@ -16,7 +15,6 @@ Sed feugiat neque a augue tristique, a vehicula orci feugiat. Pellentesque eleif
 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer non ipsum a neque vehicula tincidunt. Etiam aliquet magna et aliquet tempor. Mauris quis purus dui. Sed elit felis, suscipit quis fringilla eu, malesuada ac nulla. Nunc a efficitur odio. Nunc suscipit mauris felis, sed aliquam dui placerat sit amet. Donec eu mi id tortor pulvinar malesuada. Donec nec suscipit turpis. Proin libero massa, interdum sit amet nunc ac, cursus vehicula mauris. Duis consequat condimentum condimentum. Nullam sed arcu est. Sed cursus orci velit, vel auctor leo tristique vitae.
 
 </p>
-            <Footer/>
         </div>
         )
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import './Home.css';
 import WebMap from "../../../apis/WebMap";
-import Footer from "../../footer/Footer";
 
 const Home = () => {
     return <div>{buildHomeScreen()}</div>
@@ -94,9 +93,6 @@ const buildHomeScreen = () => {
                         <h1>სამუშაო საათები: 10:00-19:00</h1>
                     </div>
                 </div>
-            </section>
-            <section>
-                {/* <Footer/> */}
             </section>
         </div>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../footer/Footer";
 import "./Contact.css";
 import WebMap from "../../../apis/WebMap";
 
@@ -35,9 +34,6 @@ const buildContactScreen = () => {
             </section>
             <section className="map">
                 <WebMap/>
-            </section>
-            <section>
-                <Footer/>
             </section>
         </div>
     );

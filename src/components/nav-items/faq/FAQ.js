@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../footer/Footer";
 import "./FAQ.css";
 
 
@@ -41,10 +40,6 @@ const buildFaqScreen = () => {
                         
                     </div>  
                 </div>
-            </section>
-
-            <section>
-                <Footer/>
             </section>
         </div>
     );

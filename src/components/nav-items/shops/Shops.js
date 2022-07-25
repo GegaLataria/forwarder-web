@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../footer/Footer";
 import "./Shops.css";
 
 const Shops = () => {
@@ -83,9 +82,6 @@ const buildShopsScreen = () => {
                         <h4 className="shops-section__list__item__link">Trendyol</h4>
                     </a>
                 </div>
-            </section>
-            <section>
-                <Footer/>
             </section>
         </div>
         

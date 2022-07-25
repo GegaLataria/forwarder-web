@@ -1,6 +1,5 @@
 import React from "react";
 import "./Order.css";
-import Footer from "../../footer/Footer";
 
 const Order = () => {
     return <div>{buildOrderScreen()}</div>
@@ -40,10 +39,6 @@ const buildOrderScreen = () => {
                 title="video"
             />{" "}
             </section>
-            <section>
-                <Footer/>
-            </section>
-            
         </div>
     );
 }
