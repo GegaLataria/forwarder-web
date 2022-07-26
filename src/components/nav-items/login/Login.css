@@ -6,8 +6,8 @@
 }
 
 .login-form {
-  width: 30vw;
-  height: 25vw;
+  width: 35vw;
+  height: 30vw;
   background-color: rgb(255, 241, 236);
   display: flex;
   align-items:center;
@@ -17,7 +17,7 @@
 }
 
 .login-form__item {
-  margin-top: 2vw;
+  margin-top: .5vw;
   transform: translate(0, -50%);
 }
 
@@ -27,6 +27,7 @@
 
 .login-form__item__input {
   width: 17vw;
+  height: 3vw;
   border: 1px solid #FD8467;
   border-radius: 3px;
   background-color: rgba(253, 133, 103, 0.209);

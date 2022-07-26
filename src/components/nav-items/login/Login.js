@@ -3,28 +3,29 @@ import "./Login.css";
 
 const database = [
   {
-    name: "Gega",
+    username: "Gega",
     password: "1234",
   },
   {
-    name: "Anano",
+    username: "Anano",
     password: "123",
   },
 ];
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  console.log(document.forms[0].username.value);
-  console.log(document.forms[0].password.value);
-};
-
-const handleLogin = (username, pass) => {
-  if (username === database[0].name && pass === database[0].password) {
-    console.log("Success");
-  }
-};
-
 const Login = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    let { uname, pass } = document.forms[0];
+    const userData = database.find((user) => user.username === uname.value);
+    if (userData) {
+      if (userData.password === pass.value) {
+        setIsSubmitted(true);
+        console.log("success");
+      }
+    }
+  };
+
   return (
     <div className="login-container">
       <form className="login-form">
@@ -32,7 +33,7 @@ const Login = () => {
           <p className="login-form__item__title">სახელი</p>
           <input
             className="login-form__item__input"
-            name="username"
+            name="uname"
             type={"email"}
           ></input>
         </div>
@@ -40,7 +41,7 @@ const Login = () => {
           <p className="login-form__item__title">პაროლი</p>
           <input
             className="login-form__item__input"
-            name="password"
+            name="pass"
             type={"password"}
           ></input>
         </div>
