@@ -14,6 +14,8 @@ const database = [
 
 const handleSubmit = (event) => {
   event.preventDefault();
+  console.log(document.forms[0].username.value);
+  console.log(document.forms[0].password.value);
 };
 
 const handleLogin = (username, pass) => {
@@ -28,11 +30,19 @@ const Login = () => {
       <form className="login-form">
         <div className="login-form__item">
           <p className="login-form__item__title">სახელი</p>
-          <input className="login-form__item__input" type={"email"}></input>
+          <input
+            className="login-form__item__input"
+            name="username"
+            type={"email"}
+          ></input>
         </div>
         <div className="login-form__item">
           <p className="login-form__item__title">პაროლი</p>
-          <input className="login-form__item__input" type={"password"}></input>
+          <input
+            className="login-form__item__input"
+            name="password"
+            type={"password"}
+          ></input>
         </div>
         <div>
           <input
