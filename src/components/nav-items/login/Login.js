@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import LoggedIn from "./LoggedIn";
 import "./Login.css";
 
 const database = [
@@ -14,6 +15,7 @@ const database = [
 
 const Login = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [loggedInUser, setLoggedInUser] = useState({});
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
@@ -21,41 +23,56 @@ const Login = () => {
     if (userData) {
       if (userData.password === pass.value) {
         setIsSubmitted(true);
-        console.log("success");
+        setLoggedInUser(userData);
       }
     }
   };
 
-  return (
-    <div className="login-container">
-      <form className="login-form">
-        <div className="login-form__item">
-          <p className="login-form__item__title">სახელი</p>
-          <input
-            className="login-form__item__input"
-            name="uname"
-            type={"email"}
-          ></input>
-        </div>
-        <div className="login-form__item">
-          <p className="login-form__item__title">პაროლი</p>
-          <input
-            className="login-form__item__input"
-            name="pass"
-            type={"password"}
-          ></input>
-        </div>
-        <div>
-          <input
-            className="login-form__button"
-            type={"submit"}
-            onClick={handleSubmit}
-            value="Login"
-          ></input>
-        </div>
-      </form>
-    </div>
-  );
+  useEffect(() => {
+    window.localStorage.setItem("user", JSON.stringify(loggedInUser));
+  }, [loggedInUser]);
+
+  useEffect(() => {
+    const user = JSON.parse(window.localStorage.getItem("user"));
+    if (user) {
+      setLoggedInUser(user);
+    }
+  }, []);
+
+  const renderForm = () => {
+    return (
+      <div className="login-container">
+        <form className="login-form">
+          <div className="login-form__item">
+            <p className="login-form__item__title">სახელი</p>
+            <input
+              className="login-form__item__input"
+              name="uname"
+              type={"email"}
+            ></input>
+          </div>
+          <div className="login-form__item">
+            <p className="login-form__item__title">პაროლი</p>
+            <input
+              className="login-form__item__input"
+              name="pass"
+              type={"password"}
+            ></input>
+          </div>
+          <div>
+            <input
+              className="login-form__button"
+              type={"submit"}
+              onClick={handleSubmit}
+              value="Login"
+            ></input>
+          </div>
+        </form>
+      </div>
+    );
+  };
+
+  return <div>{isSubmitted ? console.log(loggedInUser) : renderForm()}</div>;
 };
 
 // function Login() {
