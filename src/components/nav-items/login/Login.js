@@ -15,7 +15,12 @@ const database = [
 
 const Login = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const [loggedInUser, setLoggedInUser] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem("user");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
+  });
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
@@ -29,15 +34,10 @@ const Login = () => {
   };
 
   useEffect(() => {
-    window.localStorage.setItem("user", JSON.stringify(loggedInUser));
-  }, [loggedInUser]);
-
-  useEffect(() => {
-    const user = JSON.parse(window.localStorage.getItem("user"));
-    if (user) {
-      setLoggedInUser(user);
+    if (loggedInUser.length !== 0) {
+      window.localStorage.setItem("user", JSON.stringify(loggedInUser));
     }
-  }, []);
+  }, [loggedInUser]);
 
   const renderForm = () => {
     return (
@@ -72,7 +72,14 @@ const Login = () => {
     );
   };
 
-  return <div>{isSubmitted ? console.log(loggedInUser) : renderForm()}</div>;
+  const checkUser = () => {
+    return (
+      window.localStorage.getItem("user") &&
+      window.localStorage.getItem("user").length !== 0
+    );
+  };
+
+  return <div>{checkUser ? <LoggedIn /> : renderForm()}</div>;
 };
 
 // function Login() {
