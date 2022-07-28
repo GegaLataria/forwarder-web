@@ -15,6 +15,7 @@ const database = [
 
 const Login = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [test, setTest] = useState(0);
   const [loggedInUser, setLoggedInUser] = useState(() => {
     // getting stored value
     const saved = localStorage.getItem("user");
@@ -32,7 +33,6 @@ const Login = () => {
       }
     }
   };
-
   useEffect(() => {
     if (loggedInUser.length !== 0) {
       window.localStorage.setItem("user", JSON.stringify(loggedInUser));
@@ -73,13 +73,22 @@ const Login = () => {
   };
 
   const checkUser = () => {
-    return (
-      window.localStorage.getItem("user") &&
-      window.localStorage.getItem("user").length !== 0
-    );
+    if (window.localStorage.getItem("user")) {
+      if (window.localStorage.getItem("user").length !== 0) {
+        return true;
+      }
+    }
+    return false;
   };
-
-  return <div>{checkUser ? <LoggedIn /> : renderForm()}</div>;
+  return (
+    <div>
+      {loggedInUser ? (
+        <LoggedIn user={loggedInUser} setUser={setLoggedInUser} />
+      ) : (
+        renderForm()
+      )}
+    </div>
+  );
 };
 
 // function Login() {
