@@ -1,0 +1,38 @@
+
+.sign-out-button {
+    margin-top: 1vw;
+    color: #FFF;
+    background-color: #FD8467;
+    border-color: #FD8467;
+    border-radius: 5px;
+    font-size: 1.7vw;
+    width: 10vw;
+    height: 4vw;
+}
+
+.address-box__text {
+    font-size: 2vw;
+}
+
+.address-box__text__username {
+    color: #FD8467;
+}
+
+.countries-box__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.countries-box__list__item {
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-right: 3vw;
+    background-color: #fff;
+    padding: 2vw 5vw;
+    border-radius: 10px;
+}
+
+.countries-box__list__item:hover {
+    background-color: #FD8467;
+}
