@@ -1,5 +1,22 @@
 .loggedInPage {
-    width: 100vw;
+    display: flex;
+}
+
+.login-column-left {
+    flex: 75%;
+}
+
+.login-column-right {
+    margin-top: 4vw;
+    margin-left: 1vw;
+    background-color: #393838;
+    flex: 25%;
+    border-radius: 5px;
+    /* overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0; */
+    height: 100vh;
 }
 
 .sign-out-button {
@@ -61,14 +78,14 @@
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
-    justify-content:space-between;
+    justify-content:space-around;
     text-align: center;
     
 }
 
 .user-address__list__item {
     width: 45%;
-    background: rgba(128, 128, 128, 0.2);
+    background: rgba(128, 128, 128, 0.1);
     padding: 1vw;
     border-radius: 1.25vw;
     margin-bottom: 1.25vw;
@@ -82,3 +99,62 @@
 .user-address__list__item__input {
     font-size: 1.5vw;
 }
+
+.currency-tab {
+    margin-left: 2vw;
+    margin-top: 2vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 2vw 2vw;
+    text-align: center;
+    width: 12vw;
+    background-color: rgb(102,195,173);
+}
+
+.login-column-right__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.login-column-right__card {
+    background-color: rgba(145, 141, 139, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    width: 20vw;
+    padding: 2vw 5vw;
+    text-align: center;
+    
+}
+
+.login-column-right__card__info {
+    font-size: 1.2vw;   
+}
+
+.horizontal-line {
+    border: 1px solid #FD8467;
+}
+
+.debt-text {
+    font-size: 1vw;
+}
+
+.login-column-right__list {
+    margin-top: 3vw;
+}
+
+.login-column-right__list__item {
+    list-style: none;
+    font-size: 1.8vw;
+    cursor: pointer;
+    margin-bottom: 2vw;
+    color: rgba(255, 255, 255, 0.312);
+}
+
+.login-column-right__list__item:hover {
+    color: #FD8467;
+}
+
+
+
