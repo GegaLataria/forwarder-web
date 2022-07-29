@@ -1,3 +1,6 @@
+.loggedInPage {
+    width: 100vw;
+}
 
 .sign-out-button {
     margin-top: 1vw;
@@ -10,12 +13,22 @@
     height: 4vw;
 }
 
+.address-countries-container {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background-color: rgb(255, 241, 236);
+}
+
 .address-box__text {
     font-size: 2vw;
 }
 
 .address-box__text__username {
     color: #FD8467;
+}
+
+.countries-box {
+    margin-top: 3vw;
 }
 
 .countries-box__list {
@@ -29,10 +42,43 @@
     cursor: pointer;
     margin-right: 3vw;
     background-color: #fff;
-    padding: 2vw 5vw;
+    padding: 1vw 5vw;
     border-radius: 10px;
 }
 
 .countries-box__list__item:hover {
     background-color: #FD8467;
+}
+
+.user-address {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.user-address__list {
+    margin-top: 0.6vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content:space-between;
+    text-align: center;
+    
+}
+
+.user-address__list__item {
+    width: 45%;
+    background: rgba(128, 128, 128, 0.2);
+    padding: 1vw;
+    border-radius: 1.25vw;
+    margin-bottom: 1.25vw;
+    text-decoration: none;
+}
+
+.user-address__list__item__title {
+    font-size: 1vw;
+}
+
+.user-address__list__item__input {
+    font-size: 1.5vw;
 }

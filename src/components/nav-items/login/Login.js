@@ -4,12 +4,26 @@ import "./Login.css";
 
 const database = [
   {
-    username: "Gega",
+    email: "gega@gmail.com",
     password: "1234",
+    firstName: "Gega",
+    lastName: "Lataria",
+    phoneNumber: "555123456",
+    addressOneTurkey: "Istanbul",
+    addressTwoTurkey: "Fatih",
+    addressThreeTurkey: "Aksaray Mah",
+    zipCodeTurkey: "34096",
   },
   {
-    username: "Anano",
+    email: "anano@gmail.com",
     password: "123",
+    firstName: "Anano",
+    lastName: "Kapanadze",
+    phoneNumber: "555123456",
+    addressOneTurkey: "Istanbul",
+    addressTwoTurkey: "Fatih",
+    addressThreeTurkey: "Aksaray Mah",
+    zipCodeTurkey: "34096",
   },
 ];
 
@@ -25,7 +39,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
-    const userData = database.find((user) => user.username === uname.value);
+    const userData = database.find((user) => user.email === uname.value);
     if (userData) {
       if (userData.password === pass.value) {
         setIsSubmitted(true);
