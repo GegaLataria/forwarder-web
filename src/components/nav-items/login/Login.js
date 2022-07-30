@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LoggedIn from "./LoggedIn";
+import LoggedIn from "./loggedInItems/LoggedIn";
 import "./Login.css";
 
 const database = [
@@ -85,14 +85,6 @@ const Login = () => {
     );
   };
 
-  const checkUser = () => {
-    if (window.localStorage.getItem("user")) {
-      if (window.localStorage.getItem("user").length !== 0) {
-        return true;
-      }
-    }
-    return false;
-  };
   return (
     <div>
       {loggedInUser ? (

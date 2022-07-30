@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { MyLink } from "../../../footer/MyLink";
 import "./LoggedIn.css";
+import LoggedInBar from "./LoggedInBar";
 
 const LoggedIn = ({ user, setUser }) => {
   const handleClick = () => {
@@ -89,26 +91,7 @@ const LoggedIn = ({ user, setUser }) => {
           </div>
         </div>
       </div>
-      <div className="login-column-right">
-        <p className="currency-tab">1 GEL = 6.01 TRY</p>
-        <div className="login-column-right__container">
-          <div className="login-column-right__card">
-            <p className="login-column-right__card__info">
-              {user.firstName} {user.lastName}
-            </p>
-            <hr className="horizontal-line"></hr>
-            <p className="debt-text">დავალიანება: 15.70</p>
-          </div>
-        </div>
-        <div className="login-column-right__list">
-          <ul>
-            <li className="login-column-right__list__item">მისამართები</li>
-            <li className="login-column-right__list__item">ჩემი ამანათები</li>
-            <li className="login-column-right__list__item">შეტყობინებები</li>
-            <li className="login-column-right__list__item">ტრანზაქციები</li>
-          </ul>
-        </div>
-      </div>
+      <LoggedInBar user={user} />
     </div>
   );
 };

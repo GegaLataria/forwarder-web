@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./header/Header";
 import Home from "./nav-items/home/Home";
 import Calculator from "./nav-items/calculator/Calculator";
@@ -9,50 +9,48 @@ import Shops from "./nav-items/shops/Shops";
 import Contact from "./nav-items/contact/Contact";
 import Login from "./nav-items/login/Login";
 import Conditions from "./terms-and-cond/Conditions";
-import './App.css';
+import Parcels from "./nav-items/login/loggedInItems/Parcels";
+import "./App.css";
 import Footer from "./footer/Footer";
 
-
-
 const App = () => {
-    return (
+  return (
+    <div>
+      <BrowserRouter>
+        <Header />
         <div>
-            <BrowserRouter>
-                    <Header/>
-                    <div>
-
-                    
-                    <Route exact path="/main">
-                        <Home/>
-                    </Route>
-                    <Route path="/faq">
-                        <FAQ/>
-                    </Route>
-                    <Route path="/how-to-order">
-                        <Order/>
-                    </Route>
-                    <Route path="/calculator">
-                        <Calculator/>
-                    </Route>
-                    <Route path="/shops">
-                        <Shops/>
-                    </Route>
-                    <Route path="/contact">
-                        <Contact/>
-                    </Route>
-                    <Route path="/login">
-                        <Login/>
-                    </Route>
-                    <Route path="/terms-and-conditions">
-                        <Conditions/>
-                    </Route>
-
-                    </div>
-                    <Footer/>
-            </BrowserRouter>
-            
+          <Route exact path="/main">
+            <Home />
+          </Route>
+          <Route path="/faq">
+            <FAQ />
+          </Route>
+          <Route path="/how-to-order">
+            <Order />
+          </Route>
+          <Route path="/calculator">
+            <Calculator />
+          </Route>
+          <Route path="/shops">
+            <Shops />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route path="/terms-and-conditions">
+            <Conditions />
+          </Route>
+          <Route path="/login/parcels">
+            <Parcels />
+          </Route>
         </div>
-    );
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default App;

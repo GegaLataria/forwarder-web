@@ -26,6 +26,7 @@
 }
 
 .login-form__item__input {
+  font-size: 1.2vw;
   width: 17vw;
   height: 3vw;
   border: 1px solid #FD8467;

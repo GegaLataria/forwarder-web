@@ -142,10 +142,13 @@
 
 .login-column-right__list {
     margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5vw;
 }
 
 .login-column-right__list__item {
-    list-style: none;
+    text-decoration: none;
     font-size: 1.8vw;
     cursor: pointer;
     margin-bottom: 2vw;
@@ -154,6 +157,7 @@
 
 .login-column-right__list__item:hover {
     color: #FD8467;
+    transform: scale(1.05);
 }
 
 
