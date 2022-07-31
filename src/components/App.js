@@ -13,7 +13,13 @@ import Parcels from "./nav-items/login/loggedInItems/Parcels";
 import "./App.css";
 import Footer from "./footer/Footer";
 
+export const Context = React.createContext();
+
 const App = () => {
+  const value = {
+    name: "gega",
+    gvari: "lataria",
+  };
   return (
     <div>
       <BrowserRouter>
@@ -44,7 +50,9 @@ const App = () => {
             <Conditions />
           </Route>
           <Route path="/login/parcels">
-            <Parcels />
+            <Context.Provider value={value}>
+              <Parcels />
+            </Context.Provider>
           </Route>
         </div>
         <Footer />
