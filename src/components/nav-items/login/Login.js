@@ -14,6 +14,16 @@ const database = [
     addressTwoTurkey: "Fatih",
     addressThreeTurkey: "Aksaray Mah",
     zipCodeTurkey: "34096",
+    transactions: {
+      dateOne: "05.05.2022",
+      moneyOne: "25.7",
+      dateTwo: "01.04.2022",
+      moneyTwo: "19.8",
+      dateThree: "25.03.2022",
+      moneyThree: "10.5",
+      dateFour: "10.02.2022",
+      moneyFour: "40.4",
+    },
   },
   {
     email: "anano@gmail.com",
@@ -25,6 +35,16 @@ const database = [
     addressTwoTurkey: "Fatih",
     addressThreeTurkey: "Aksaray Mah",
     zipCodeTurkey: "34096",
+    transactions: {
+      dateOne: "15.07.2022",
+      moneyOne: "12.7",
+      dateTwo: "11.06.2022",
+      moneyTwo: "45.8",
+      dateThree: "10.05.2022",
+      moneyThree: "9.5",
+      dateFour: "18.02.2022",
+      moneyFour: "30.4",
+    },
   },
 ];
 

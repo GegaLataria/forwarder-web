@@ -1,0 +1,23 @@
+.transactions-list {
+    margin-top: 4.4vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color:rgba(253, 133, 103, 0.1);
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.transactions-list__item__title {
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.transactions-list__item__input {
+    font-size: 1.2vw;
+}
+
+.transactions-list__item__logo {
+    width: 6vw;
+    height: auto;
+}

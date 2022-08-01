@@ -1,5 +1,6 @@
 import React from "react";
 import { MyLink } from "../../../../footer/MyLink";
+import "./LoggedInBar.css";
 
 const LoggedInBar = ({ user }) => {
   return (
