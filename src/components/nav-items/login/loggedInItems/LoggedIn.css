@@ -18,13 +18,12 @@
 }
 
 .address-countries-container {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding: 4vw 3vw;
     background-color: rgb(255, 241, 236);
 }
 
 .address-box__text {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .address-box__text__username {

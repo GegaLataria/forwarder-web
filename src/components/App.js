@@ -14,6 +14,10 @@ import "./App.css";
 import Footer from "./footer/Footer";
 import Notifications from "./nav-items/login/loggedInItems/notifications/Notifications";
 import Transactions from "./nav-items/login/loggedInItems/transactions/Transactions";
+import WareHouseParcels from "./nav-items/login/loggedInItems/parcels/allParcels/WarehouseParcels";
+import SentParcels from "./nav-items/login/loggedInItems/parcels/allParcels/SentParcels";
+import ArrivedParcels from "./nav-items/login/loggedInItems/parcels/allParcels/ArrivedParcels";
+import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/TakenParcels";
 
 export const Context = React.createContext();
 
@@ -62,6 +66,18 @@ const App = () => {
             </Route>
             <Route path="/login/transactions">
               <Transactions />
+            </Route>
+            <Route exact path={"/login/parcels"}>
+              <WareHouseParcels />
+            </Route>
+            <Route path={"/login/parcels/sent"}>
+              <SentParcels />
+            </Route>
+            <Route path={"/login/parcels/arrived"}>
+              <ArrivedParcels />
+            </Route>
+            <Route path={"/login/parcels/taken"}>
+              <TakenParcels />
             </Route>
           </div>
           <Footer />

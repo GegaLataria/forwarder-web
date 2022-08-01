@@ -14,7 +14,7 @@ const Parcels = () => {
             <MyLink
               className="parcels-list__item__link"
               text={"საწყობში"}
-              to={"/login/parcels/warehouse"}
+              to={"/login/parcels"}
             ></MyLink>
           </div>
           <div className="parcels-list__item">
