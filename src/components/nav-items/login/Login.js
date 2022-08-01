@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Context } from "../../App";
 import LoggedIn from "./loggedInItems/LoggedIn";
 import "./Login.css";
 
@@ -28,13 +29,9 @@ const database = [
 ];
 
 const Login = () => {
+  const value = React.useContext(Context);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [loggedInUser, setLoggedInUser] = useState(() => {
-    // getting stored value
-    const saved = localStorage.getItem("user");
-    const initialValue = JSON.parse(saved);
-    return initialValue || "";
-  });
+  //there was useState
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
@@ -42,15 +39,15 @@ const Login = () => {
     if (userData) {
       if (userData.password === pass.value) {
         setIsSubmitted(true);
-        setLoggedInUser(userData);
+        value.setLoggedInUser(userData);
       }
     }
   };
   useEffect(() => {
-    if (loggedInUser.length !== 0) {
-      window.localStorage.setItem("user", JSON.stringify(loggedInUser));
+    if (value.loggedInUser.length !== 0) {
+      window.localStorage.setItem("user", JSON.stringify(value.loggedInUser));
     }
-  }, [loggedInUser]);
+  }, [value.loggedInUser]);
 
   const renderForm = () => {
     return (
@@ -87,8 +84,8 @@ const Login = () => {
 
   return (
     <div>
-      {loggedInUser ? (
-        <LoggedIn user={loggedInUser} setUser={setLoggedInUser} />
+      {value.loggedInUser ? (
+        <LoggedIn user={value.loggedInUser} setUser={value.setLoggedInUser} />
       ) : (
         renderForm()
       )}

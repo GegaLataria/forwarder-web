@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./header/Header";
 import Home from "./nav-items/home/Home";
@@ -16,44 +16,46 @@ import Footer from "./footer/Footer";
 export const Context = React.createContext();
 
 const App = () => {
-  const value = {
-    name: "gega",
-    gvari: "lataria",
-  };
+  const [loggedInUser, setLoggedInUser] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem("user");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
+  });
   return (
     <div>
       <BrowserRouter>
         <Header />
         <div>
-          <Route exact path="/main">
-            <Home />
-          </Route>
-          <Route path="/faq">
-            <FAQ />
-          </Route>
-          <Route path="/how-to-order">
-            <Order />
-          </Route>
-          <Route path="/calculator">
-            <Calculator />
-          </Route>
-          <Route path="/shops">
-            <Shops />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route path="/terms-and-conditions">
-            <Conditions />
-          </Route>
-          <Route path="/login/parcels">
-            <Context.Provider value={value}>
+          <Context.Provider value={{ loggedInUser, setLoggedInUser }}>
+            <Route exact path="/main">
+              <Home />
+            </Route>
+            <Route path="/faq">
+              <FAQ />
+            </Route>
+            <Route path="/how-to-order">
+              <Order />
+            </Route>
+            <Route path="/calculator">
+              <Calculator />
+            </Route>
+            <Route path="/shops">
+              <Shops />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route path="/terms-and-conditions">
+              <Conditions />
+            </Route>
+            <Route path="/login/parcels">
               <Parcels />
-            </Context.Provider>
-          </Route>
+            </Route>
+          </Context.Provider>
         </div>
         <Footer />
       </BrowserRouter>

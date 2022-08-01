@@ -6,7 +6,7 @@ const Parcels = () => {
   const value = React.useContext(Context);
   return (
     <div>
-      {value.name} {value.gvari}
+      {value.loggedInUser.firstName} {value.loggedInUser.lastName}
     </div>
   );
 };
