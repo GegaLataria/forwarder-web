@@ -16,13 +16,27 @@ const database = [
     zipCodeTurkey: "34096",
     transactions: {
       dateOne: "05.05.2022",
-      moneyOne: "25.7",
+      weightOne: 2.8,
       dateTwo: "01.04.2022",
-      moneyTwo: "19.8",
+      weightTwo: 1.9,
       dateThree: "25.03.2022",
-      moneyThree: "10.5",
+      weightThree: 0.9,
       dateFour: "10.02.2022",
-      moneyFour: "40.4",
+      weightFour: 3.7,
+    },
+    arrivedParcels: {
+      trackingOne: "5342317879",
+      weightOne: 3.8,
+      dateOne: "15.07.2022",
+      trackingTwo: "1352317723",
+      weightTwo: 3.1,
+      dateTwo: "07.07.2022",
+      trackingThree: "9134231787",
+      weightThree: 0.7,
+      dateThree: "30.06.2022",
+      trackingFour: "7825409870",
+      weightFour: 7.1,
+      dateFour: "25.06.2022",
     },
   },
   {
@@ -37,13 +51,13 @@ const database = [
     zipCodeTurkey: "34096",
     transactions: {
       dateOne: "15.07.2022",
-      moneyOne: "12.7",
+      weightOne: 2.1,
       dateTwo: "11.06.2022",
-      moneyTwo: "45.8",
+      weightTwo: 4.5,
       dateThree: "10.05.2022",
-      moneyThree: "9.5",
+      weightThree: 2.5,
       dateFour: "18.02.2022",
-      moneyFour: "30.4",
+      weightFour: 0.7,
     },
   },
 ];
@@ -51,7 +65,6 @@ const database = [
 const Login = () => {
   const value = React.useContext(Context);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  //there was useState
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
@@ -79,6 +92,7 @@ const Login = () => {
               className="login-form__item__input"
               name="uname"
               type={"email"}
+              required
             ></input>
           </div>
           <div className="login-form__item">
@@ -87,6 +101,7 @@ const Login = () => {
               className="login-form__item__input"
               name="pass"
               type={"password"}
+              required
             ></input>
           </div>
           <div>

@@ -14,7 +14,6 @@ import "./App.css";
 import Footer from "./footer/Footer";
 import Notifications from "./nav-items/login/loggedInItems/notifications/Notifications";
 import Transactions from "./nav-items/login/loggedInItems/transactions/Transactions";
-import WareHouseParcels from "./nav-items/login/loggedInItems/parcels/allParcels/WarehouseParcels";
 import SentParcels from "./nav-items/login/loggedInItems/parcels/allParcels/SentParcels";
 import ArrivedParcels from "./nav-items/login/loggedInItems/parcels/allParcels/ArrivedParcels";
 import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/TakenParcels";
@@ -58,7 +57,7 @@ const App = () => {
             <Route path="/terms-and-conditions">
               <Conditions />
             </Route>
-            <Route path="/login/parcels">
+            <Route exact path="/login/parcels">
               <Parcels />
             </Route>
             <Route path="/login/notifications">
@@ -66,9 +65,6 @@ const App = () => {
             </Route>
             <Route path="/login/transactions">
               <Transactions />
-            </Route>
-            <Route exact path={"/login/parcels"}>
-              <WareHouseParcels />
             </Route>
             <Route path={"/login/parcels/sent"}>
               <SentParcels />

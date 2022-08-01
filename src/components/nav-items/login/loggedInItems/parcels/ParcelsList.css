@@ -1,0 +1,26 @@
+.parcels-list {
+    margin-top: 4.4vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.parcels-list__item {
+    cursor: pointer;
+    width: 23%;
+    background:rgba(255, 170, 139, 0.618);
+    padding: 2vw 2vw;
+    border-radius: 1.25vw;
+    margin-bottom: 1.25vw;
+    text-decoration: none;
+}
+
+.parcels-list__item:hover {
+    background-color: #FD8467;
+}
+
+.parcels-list__item__link {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #fff;
+}

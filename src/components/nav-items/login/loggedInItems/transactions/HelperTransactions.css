@@ -18,6 +18,7 @@
 }
 
 .transactions-list__item__logo {
-    width: 6vw;
+    margin-top: .5vw;
+    width: 5vw;
     height: auto;
 }

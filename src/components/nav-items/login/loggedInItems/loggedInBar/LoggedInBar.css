@@ -1,7 +1,3 @@
-.newClass {
-    /* flex:25%; */
-}
-
 .login-column-right {
     margin-top: .4vw;
     margin-left: 1vw;
@@ -12,7 +8,7 @@
     position: fixed;
     right: 0;
     top: 0; */
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .currency-tab {
