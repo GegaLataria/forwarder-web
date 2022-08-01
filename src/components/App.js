@@ -9,9 +9,11 @@ import Shops from "./nav-items/shops/Shops";
 import Contact from "./nav-items/contact/Contact";
 import Login from "./nav-items/login/Login";
 import Conditions from "./terms-and-cond/Conditions";
-import Parcels from "./nav-items/login/loggedInItems/Parcels";
+import Parcels from "./nav-items/login/loggedInItems/parcels/Parcels";
 import "./App.css";
 import Footer from "./footer/Footer";
+import Notifications from "./nav-items/login/loggedInItems/notifications/Notifications";
+import Transactions from "./nav-items/login/loggedInItems/transactions/Transactions";
 
 export const Context = React.createContext();
 
@@ -25,9 +27,9 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Header />
-        <div>
-          <Context.Provider value={{ loggedInUser, setLoggedInUser }}>
+        <Context.Provider value={{ loggedInUser, setLoggedInUser }}>
+          <Header />
+          <div>
             <Route exact path="/main">
               <Home />
             </Route>
@@ -55,9 +57,15 @@ const App = () => {
             <Route path="/login/parcels">
               <Parcels />
             </Route>
-          </Context.Provider>
-        </div>
-        <Footer />
+            <Route path="/login/notifications">
+              <Notifications />
+            </Route>
+            <Route path="/login/transactions">
+              <Transactions />
+            </Route>
+          </div>
+          <Footer />
+        </Context.Provider>
       </BrowserRouter>
     </div>
   );

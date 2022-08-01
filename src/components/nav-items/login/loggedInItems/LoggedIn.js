@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MyLink } from "../../../footer/MyLink";
 import "./LoggedIn.css";
-import LoggedInBar from "./LoggedInBar";
+import LoggedInBar from "./loggedInBar/LoggedInBar";
 
 const LoggedIn = ({ user, setUser }) => {
   const handleClick = () => {
@@ -97,8 +97,3 @@ const LoggedIn = ({ user, setUser }) => {
 };
 
 export default LoggedIn;
-
-//   if (document.getElementsByClassName("login")[0] !== undefined) {
-//     document.getElementsByClassName("login")[0].style.display = "none";
-//   }
-//   <MyLink to="/loggedin" className="login" applyStyles text={"გასვლა"} />;

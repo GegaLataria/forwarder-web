@@ -1,5 +1,5 @@
 import React from "react";
-import { MyLink } from "../../../footer/MyLink";
+import { MyLink } from "../../../../footer/MyLink";
 
 const LoggedInBar = ({ user }) => {
   return (
@@ -18,7 +18,7 @@ const LoggedInBar = ({ user }) => {
         <MyLink
           className="login-column-right__list__item"
           text={"მისამართები"}
-          to={"/login/address"}
+          to={"/login"}
         ></MyLink>
         <MyLink
           className="login-column-right__list__item"

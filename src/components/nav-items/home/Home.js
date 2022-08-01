@@ -7,6 +7,8 @@ const Home = () => {
 };
 
 const buildHomeScreen = () => {
+  const flightsArray = ["TR001", "TR002", "TR003"];
+
   return (
     <div>
       <div className="box">
@@ -74,17 +76,17 @@ const buildHomeScreen = () => {
         <div className="flights_column">
           <div className="flights_box">
             <div className="flights_box_item">
-              <h3>რეისი TR003 გზაშია</h3>
+              <h3>რეისი {flightsArray[flightsArray.length - 1]} გზაშია</h3>
             </div>
           </div>
           <div className="flights_box">
             <div className="flights_box_item">
-              <h3>რეისი TR002 ჩამოსულია</h3>
+              <h3>რეისი {flightsArray[1]} ჩამოსულია</h3>
             </div>
           </div>
           <div className="flights_box">
             <div className="flights_box_item">
-              <h3>რეისი TR001 ჩამოსულია</h3>
+              <h3>რეისი {flightsArray[0]} ჩამოსულია</h3>
             </div>
           </div>
         </div>
