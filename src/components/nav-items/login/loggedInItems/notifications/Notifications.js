@@ -12,6 +12,13 @@ const Notifications = () => {
         <div className="login-column-left">
           <div className="notifications-list">
             <div className="notifications-list__item">
+              <h3 className="notifications-list__item__left-title">
+                მისამართი შეიცვალა
+                <span className="notifications-list__item__right-title">
+                  25.05.2022
+                </span>
+              </h3>
+              <hr></hr>
               <p className="notifications-list__item__text">
                 მოგესალმებით, გაცნობებთ რომ მომსახურების გაუმჯობესების მიზნით,
                 შეიცვალა თურქეთის საწყობის მისამართი, 1 სექტემბრამდე გამოწერილი
@@ -20,6 +27,13 @@ const Notifications = () => {
               </p>
             </div>
             <div className="notifications-list__item">
+              <h3 className="notifications-list__item__left-title">
+                მისამართი შეიცვალა
+                <span className="notifications-list__item__right-title">
+                  25.05.2022
+                </span>
+              </h3>
+              <hr></hr>
               <p className="notifications-list__item__text">
                 მოგესალმებით, გაცნობებთ რომ მომსახურების გაუმჯობესების მიზნით,
                 შეიცვალა თურქეთის საწყობის მისამართი, 1 სექტემბრამდე გამოწერილი
@@ -28,6 +42,13 @@ const Notifications = () => {
               </p>
             </div>
             <div className="notifications-list__item">
+              <h3 className="notifications-list__item__left-title">
+                მისამართი შეიცვალა
+                <span className="notifications-list__item__right-title">
+                  25.05.2022
+                </span>
+              </h3>
+              <hr></hr>
               <p className="notifications-list__item__text">
                 მოგესალმებით, გაცნობებთ რომ მომსახურების გაუმჯობესების მიზნით,
                 შეიცვალა თურქეთის საწყობის მისამართი, 1 სექტემბრამდე გამოწერილი

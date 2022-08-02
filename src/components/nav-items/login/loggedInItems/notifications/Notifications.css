@@ -19,3 +19,13 @@
 .notifications-list__item__text {
     font-size: 1.5vw;
 }
+
+.notifications-list__item__left-title {
+    font-size: 1.2vw;
+    /* margin-left: 1vw; */
+}
+
+.notifications-list__item__right-title {
+    margin-right: 3vw;
+    float: right;
+}
