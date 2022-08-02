@@ -17,38 +17,43 @@ const ArrivedParcels = () => {
             className={"parcels-page__list"}
             logo={logo}
             actionType={"Tracking"}
-            dataType={value.loggedInUser.arrivedParcels.trackingThree}
+            dataType={value.loggedInUser.parcels.trackingThree}
             weightText={"წონა"}
-            weight={value.loggedInUser.arrivedParcels.weightThree + "კგ"}
-            date={value.loggedInUser.arrivedParcels.dateThree}
+            weight={value.loggedInUser.parcels.weightThree + "კგ"}
+            date={value.loggedInUser.parcels.dateThree}
             money={
-              (value.loggedInUser.arrivedParcels.weightThree * 9).toFixed(1) +
-              "₾"
+              (value.loggedInUser.parcels.weightThree * 9).toFixed(1) + "₾"
             }
           />
           <HelperTransactions
             className={"parcels-page__list"}
             logo={logo}
             actionType={"Tracking"}
-            dataType={value.loggedInUser.arrivedParcels.trackingOne}
+            dataType={value.loggedInUser.parcels.trackingOne}
             weightText={"წონა"}
-            weight={value.loggedInUser.arrivedParcels.weightOne + "კგ"}
-            date={value.loggedInUser.arrivedParcels.dateOne}
-            money={
-              (value.loggedInUser.arrivedParcels.weightOne * 9).toFixed(1) + "₾"
-            }
+            weight={value.loggedInUser.parcels.weightOne + "კგ"}
+            date={value.loggedInUser.parcels.dateOne}
+            money={(value.loggedInUser.parcels.weightOne * 9).toFixed(1) + "₾"}
           />
+          {/* <HelperTransactions
+            className={"parcels-page__list"}
+            logo={logo}
+            actionType={"Tracking"}
+            dataType={value.loggedInUser.parcels.trackingTwo}
+            weightText={"წონა"}
+            weight={value.loggedInUser.parcels.weightTwo + "კგ"}
+            date={value.loggedInUser.parcels.dateTwo}
+            money={(value.loggedInUser.parcels.weightTwo * 9).toFixed(1) + "₾"}
+          /> */}
           <HelperTransactions
             className={"parcels-page__list"}
             logo={logo}
             actionType={"Tracking"}
-            dataType={value.loggedInUser.arrivedParcels.trackingOne}
+            dataType={value.loggedInUser.parcels.trackingFour}
             weightText={"წონა"}
-            weight={value.loggedInUser.arrivedParcels.weightOne + "კგ"}
-            date={value.loggedInUser.arrivedParcels.dateOne}
-            money={
-              (value.loggedInUser.arrivedParcels.weightOne * 9).toFixed(1) + "₾"
-            }
+            weight={value.loggedInUser.parcels.weightFour + "კგ"}
+            date={value.loggedInUser.parcels.dateFour}
+            money={(value.loggedInUser.parcels.weightFour * 9).toFixed(1) + "₾"}
           />
         </div>
         <LoggedInBar user={value.loggedInUser} />

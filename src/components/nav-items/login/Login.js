@@ -24,7 +24,7 @@ const database = [
       dateFour: "10.02.2022",
       weightFour: 3.7,
     },
-    arrivedParcels: {
+    parcels: {
       trackingOne: "5342317879",
       weightOne: 3.8,
       dateOne: "15.07.2022",
@@ -42,8 +42,8 @@ const database = [
   {
     email: "anano@gmail.com",
     password: "123",
-    firstName: "Anano",
-    lastName: "Kapanadze",
+    firstName: "ანანო",
+    lastName: "კაპანაძე",
     phoneNumber: "555123456",
     addressOneTurkey: "Istanbul",
     addressTwoTurkey: "Fatih",
@@ -58,6 +58,20 @@ const database = [
       weightThree: 2.5,
       dateFour: "18.02.2022",
       weightFour: 0.7,
+    },
+    parcels: {
+      trackingOne: "3452317111",
+      weightOne: 3.1,
+      dateOne: "18.07.2022",
+      trackingTwo: "1882317744",
+      weightTwo: 1.5,
+      dateTwo: "10.07.2022",
+      trackingThree: "3194231770",
+      weightThree: 0.9,
+      dateThree: "25.06.2022",
+      trackingFour: "2355409871",
+      weightFour: 5.5,
+      dateFour: "15.06.2022",
     },
   },
 ];
