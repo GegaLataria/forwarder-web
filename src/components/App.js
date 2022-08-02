@@ -9,7 +9,7 @@ import Shops from "./nav-items/shops/Shops";
 import Contact from "./nav-items/contact/Contact";
 import Login from "./nav-items/login/Login";
 import Conditions from "./terms-and-cond/Conditions";
-import Parcels from "./nav-items/login/loggedInItems/parcels/Parcels";
+import Parcels from "./nav-items/login/loggedInItems/parcels/allParcels/Parcels";
 import "./App.css";
 import Footer from "./footer/Footer";
 import Notifications from "./nav-items/login/loggedInItems/notifications/Notifications";

@@ -1,10 +1,10 @@
 import React from "react";
-import { Context } from "../../../../App";
-import Home from "../../../home/Home";
-import LoggedInBar from "../loggedInBar/LoggedInBar";
-import HelperTransactions from "../transactions/HelperTransactions";
+import { Context } from "../../../../../App";
+import Home from "../../../../home/Home";
+import LoggedInBar from "../../loggedInBar/LoggedInBar";
+import HelperTransactions from "../../transactions/HelperTransactions";
 import "./Parcels.css";
-import ParcelsList from "./ParcelsList";
+import ParcelsList from "../ParcelsList";
 import logo from "./parcel.png";
 
 const Parcels = () => {

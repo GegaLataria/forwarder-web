@@ -11,13 +11,44 @@ const Header = () => {
   }
   return (
     <div className="topnav">
-      <MyLink to="/main" text={"მთავარი"} applyStyles />
-      <MyLink to="/faq" applyStyles text={"FAQ"} />
-      <MyLink to="/how-to-order" applyStyles text={"როგორ შევუკვეთო?"} />
-      <MyLink to="/calculator" applyStyles text={"კალკულატორი"} />
-      <MyLink to="/shops" applyStyles text={"მაღაზიები"} />
-      <MyLink to="/contact" applyStyles text={"კონტაქტი"} />
-      <MyLink to="/login" className="login" applyStyles text={text} />
+      <MyLink
+        to="/main"
+        text={"მთავარი"}
+        applyStyles
+        selectedClassname={"active"}
+      />
+      <MyLink to="/faq" applyStyles text={"FAQ"} selectedClassname={"active"} />
+      <MyLink
+        to="/how-to-order"
+        applyStyles
+        text={"როგორ შევუკვეთო?"}
+        selectedClassname={"active"}
+      />
+      <MyLink
+        to="/calculator"
+        applyStyles
+        text={"კალკულატორი"}
+        selectedClassname={"active"}
+      />
+      <MyLink
+        to="/shops"
+        applyStyles
+        text={"მაღაზიები"}
+        selectedClassname={"active"}
+      />
+      <MyLink
+        to="/contact"
+        applyStyles
+        text={"კონტაქტი"}
+        selectedClassname={"active"}
+      />
+      <MyLink
+        to="/login"
+        className="login"
+        applyStyles
+        text={text}
+        selectedClassname={"active"}
+      />
     </div>
   );
 };

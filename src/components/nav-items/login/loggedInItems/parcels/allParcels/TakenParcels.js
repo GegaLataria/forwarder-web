@@ -4,7 +4,7 @@ import Home from "../../../../home/Home";
 import LoggedInBar from "../../loggedInBar/LoggedInBar";
 import ParcelsList from "../ParcelsList";
 import "./TakenParcels.css";
-import logo from "../parcel.png";
+import logo from "./parcel.png";
 import HelperTransactions from "../../transactions/HelperTransactions";
 
 const TakenParcels = () => {

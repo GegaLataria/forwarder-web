@@ -18,7 +18,10 @@
 }
 
 .address-countries-container {
-    padding: 4vw 3vw;
+    border-radius: 10px;
+    border: .5px solid #FD8467;
+    margin-top: 3vw;
+    padding: 5vw 3vw;
     background-color: rgb(255, 241, 236);
 }
 

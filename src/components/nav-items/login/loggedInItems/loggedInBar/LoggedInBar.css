@@ -11,13 +11,32 @@
     /* height: 100vh; */
 }
 
+.currency-logout-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.log-out-but{
+    margin-top: 2vw;
+    background-color: #918D8B;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    height: 3.5vw;
+    border-radius: 10px;
+    color: #fff;
+}
+
 .currency-tab {
-    margin-left: 2vw;
+    
+
+    /* margin-left: 2vw; */
     margin-top: 2vw;
     font-size: 1vw;
     border-radius: 10px;
     color: #FFF;
-    padding: 2vw 2vw;
+    /* padding: 2vw 2vw; */
+    padding: 1vw 1vw;
     text-align: center;
     width: 12vw;
     background-color: rgb(102,195,173);
@@ -26,7 +45,10 @@
 .login-column-right__container {
     display: flex;
     justify-content: center;
-    margin-top: 10vw;
+    margin-top: 9vw;
+
+
+    margin-bottom: 6vw;
 }
 
 .login-column-right__card {
@@ -56,6 +78,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 2.5vw;
+    margin-bottom: 4vw;
 }
 
 .login-column-right__list__item {
@@ -63,10 +86,16 @@
     font-size: 1.8vw;
     cursor: pointer;
     margin-bottom: 2vw;
-    color: rgba(255, 255, 255, 0.312);
+    /* color: rgba(255, 255, 255, 0.312); */
+    color: #918D8B;
 }
 
 .login-column-right__list__item:hover {
+    color: #FD8467;
+    transform: scale(1.05);
+}
+
+.selectedItem {
     color: #FD8467;
     transform: scale(1.05);
 }

@@ -1,8 +1,9 @@
 .calculator {
-    height: 500px;
+    height: 60vh;
 }
 
 .calculator__title {
+    margin-top: 5vw;
     font-size: 1.6vw;
     color: #FD8467;
 }
@@ -16,6 +17,7 @@
     line-height: 200%;
     border-radius: .5rem;
     background-color: rgb(255, 241, 237);
+    border: 1px solid #FD8467;
 }
 
 .calculator__button {

@@ -1,0 +1,8 @@
+.linkLogo {
+    width: 2.5vw;
+    /* background-color: rgba(145, 141, 139, 0.2); */
+    background-color: #918D8B;
+    border-radius: 10px;
+    padding: 2px;
+    transform: translate(-.5vw, .7vw);
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MyLink } from "../../../footer/MyLink";
+
 import "./LoggedIn.css";
 import LoggedInBar from "./loggedInBar/LoggedInBar";
 
@@ -11,9 +11,9 @@ const LoggedIn = ({ user, setUser }) => {
   return (
     <div className="loggedInPage">
       <div className="login-column-left">
-        <button className="sign-out-button" onClick={handleClick}>
+        {/* <button className="sign-out-button" onClick={handleClick}>
           Log out
-        </button>
+        </button> */}
         <div className="address-countries-container">
           <div className="address-box">
             <div className="address-box__text">
@@ -91,7 +91,7 @@ const LoggedIn = ({ user, setUser }) => {
           </div>
         </div>
       </div>
-      <LoggedInBar user={user} />
+      <LoggedInBar user={user} setUser={setUser} />
     </div>
   );
 };
