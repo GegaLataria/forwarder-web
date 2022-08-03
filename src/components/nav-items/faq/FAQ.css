@@ -2,6 +2,7 @@
 .questions-bar__title{
     text-align: center;
     font-size: 1.2vw;
+    margin-top: 3vw;
 }
 
 .questions-bar__list {
