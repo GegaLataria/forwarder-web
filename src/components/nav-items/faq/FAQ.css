@@ -3,3 +3,29 @@
     text-align: center;
     font-size: 1.2vw;
 }
+
+.questions-bar__list {
+   margin: 4vw;
+}
+
+.questions-bar__list__item {
+    background-color: rgba(253, 133, 103, 0.1);
+    padding: 2vw 3vw;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+    border: 0.5px solid #FD8467;
+}
+
+.questions-bar__list__item__title {
+    font-size: 1.4vw;
+}
+
+.questions-bar__list__item__hr {
+    border: .5px solid #FD8467;
+}
+
+.questions-bar__list__item__input {
+    margin-top: 2vw;
+    font-weight: 500;
+    font-size: 1.3vw;
+}
