@@ -2,8 +2,8 @@ import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "50vw",
-  height: "29vw",
+  width: "60vw",
+  height: "35vw",
 };
 
 const center = {
@@ -37,7 +37,6 @@ function WebMap() {
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
-      <Marker position={(center.lat, center.lng)}></Marker>
       <></>
     </GoogleMap>
   ) : (

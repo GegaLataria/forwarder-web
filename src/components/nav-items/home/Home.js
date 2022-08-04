@@ -10,7 +10,7 @@ const buildHomeScreen = () => {
   const flightsArray = ["TR001", "TR002", "TR003"];
 
   return (
-    <div>
+    <div className="home-page">
       <div className="box-home">
         <p>
           დარეგისტრირდი, გამოიწერე სასურველი ნივთები უფრო დაბალ ფასად. თუ გაქვს
@@ -75,17 +75,23 @@ const buildHomeScreen = () => {
         <div className="flights_column">
           <div className="flights_box">
             <div className="flights_box_item">
-              <h3>რეისი {flightsArray[flightsArray.length - 1]} გზაშია</h3>
+              <h3 className="flights_box_item__input">
+                რეისი {flightsArray[flightsArray.length - 1]} გზაშია
+              </h3>
             </div>
           </div>
           <div className="flights_box">
             <div className="flights_box_item">
-              <h3>რეისი {flightsArray[1]} ჩამოსულია</h3>
+              <h3 className="flights_box_item__input">
+                რეისი {flightsArray[1]} ჩამოსულია
+              </h3>
             </div>
           </div>
           <div className="flights_box">
             <div className="flights_box_item">
-              <h3>რეისი {flightsArray[0]} ჩამოსულია</h3>
+              <h3 className="flights_box_item__input">
+                რეისი {flightsArray[0]} ჩამოსულია
+              </h3>
             </div>
           </div>
         </div>
@@ -96,9 +102,9 @@ const buildHomeScreen = () => {
         </div>
         <div className="column-contact">
           <div className="contact-info">
-            <h1>მის: ლორთქიფანიძის 26</h1>
-            <h1>ტელ: 555123456</h1>
-            <h1>სამუშაო საათები: 10:00-19:00</h1>
+            <h1 className="contact-info__item">მის: ლორთქიფანიძის 26</h1>
+            <h1 className="contact-info__item">ტელ: 555123456</h1>
+            <h1 className="contact-info__item">სამუშაო საათები: 10:00-19:00</h1>
           </div>
         </div>
       </section>

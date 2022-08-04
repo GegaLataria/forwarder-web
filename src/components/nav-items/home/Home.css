@@ -40,7 +40,12 @@
 }
 
 .desc-p {
+    line-height: 1.2;
     color:rgba(0, 0, 0, 0.7);
+
+
+    /* newly added */
+    /* font-size: 16px; */
 }
 
 #get-more-btn {
@@ -118,8 +123,8 @@
 
 .map-box {
     display: flex;
-    
 }
+
 
 .column-contact{
     display: flex;
@@ -135,6 +140,42 @@
     align-content:flex-end;
     font-size: 1.2vw;
     margin-top: 7.5vw;
+}
+
+@media (max-width: 768px){
+    .desciption-box {
+        display: block;
+    }
+    .column {
+        width: 100%;
+    }
+    .desc-p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .desc-h {
+        font-size: 16px;
+    }
+    .shops-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .box-home {
+        font-size: 16px;
+    }
+    #get-more-btn{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .platform-shop__link {
+        font-size: 16px;
+    }
+    .flights_box_item__input {
+        font-size: 14px;
+    }
+    .contact-info__item {
+        font-size: 10px;
+    }
 }
 
 

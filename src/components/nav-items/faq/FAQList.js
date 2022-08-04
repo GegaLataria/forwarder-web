@@ -21,9 +21,7 @@ const FAQList = () => {
             <h4 className="shops-section__list__item__link">გადახდა</h4>
           </a>
           <a className="categories__list__item" href="?id=6">
-            <h4 className="shops-section__list__item__link">
-              საკურიერო მომსახურება
-            </h4>
+            <h4 className="shops-section__list__item__link">საკურიერო</h4>
           </a>
         </div>
       </section>

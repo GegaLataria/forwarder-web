@@ -32,3 +32,7 @@
     background-color: transparent;
     float: right;
 }
+
+@media (max-width: 768px){
+
+}
