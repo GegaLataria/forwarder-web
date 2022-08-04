@@ -1,46 +1,38 @@
-.box {
-    height: 18.8vw;
-    background-color: #FEBDAC;
-    border-radius: 2rem;
-}
 
 .box-home {
+    background-color: #FEBDAC;
+    border-radius: 10px;
     text-align: center;
     font-size: 2vw;
-    padding: 5.6vw 3.1rem;
-    margin-top: 2rem;
-    position:relative;
+    padding: 4vw 3vw;
+    margin-top: 1.5vw;
     color:#fff
 }
 
-#shops-btn {
+.shops-btn {
+    display: inline-block;
     background-color: #FD8467;
-    text-decoration: none;
     border-radius: 5rem;
-    position: absolute;
     padding: 1.2vw 1.8vw;
-    transform: translate(-50%, -50%);
-    margin-top: 3.8vw;
 }
 
-#shops-btn:link,
-#shops-btn:visited {
+.shops-btn:link,
+.shops-btn:visited {
     text-decoration: none;
     color: #fff;
 }
 
 .desciption-box {
     display: flex;
-    /* position: absolute; */
-    margin-top: 2vw;
+    margin-top: 1.5vw;
     font-size: 2vw;
     margin-left: 1.3rem;
 }
 
 .column{
-    margin-top: 2vw;
+    margin-top: 1.5vw;
     flex: 50%;
-    padding: 0.6vw;
+    padding: .6vw;
 }
 
 .desc-h {
@@ -52,12 +44,11 @@
 }
 
 #get-more-btn {
+    display: inline-block;
     background-color: #FD8467;
     text-decoration: none;
     border-radius: 5rem;
-    /* position: absolute; */
     padding: 1.2vw 1.85vw;
-    margin-top: 1.2vw;
 }
 
 #get-more-btn:link,
@@ -84,8 +75,6 @@
     cursor: pointer;
     text-align: center;
     font-size: 2vw;
-
-    /* newly added */
     text-decoration: none;
 }
 
@@ -99,27 +88,22 @@
 }
 
 .flights {
-    margin-top: 4vw;
+    margin-top: 1vw;
     font-size: 2vw;
     margin-left: 1.2vw;
 }
 
 .flights_column {
-    /* flex: 100%; */
     display: flex;
     justify-content: space-around;
-    /* padding: .6vw; */
 }
 
 
 .flights_box {
-    /* display: inline-block; */
     width: 28vw;
     margin-right: .6vw;
     margin-top: 4.4vw;
     margin-left: .4vw;
-    /* align-items: center; */
-    /* justify-content: space-between; */
     text-align: center;
 }
 

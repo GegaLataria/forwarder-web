@@ -28,7 +28,8 @@
     background-color: #FD8467;
     border-color: #FD8467;
     color:#FFF;
-    padding: .6vw 1.85vw;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
 }
 
 #weight-result {

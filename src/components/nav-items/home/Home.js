@@ -11,15 +11,14 @@ const buildHomeScreen = () => {
 
   return (
     <div>
-      <div className="box">
-        <div className="box-home">
+      <div className="box-home">
+        <p>
           დარეგისტრირდი, გამოიწერე სასურველი ნივთები უფრო დაბალ ფასად. თუ გაქვს
           კითხვები, მოგვწერე. სლიქი - ამანათები თურქეთიდან. 1კგ=3$
-          <br />
-          <a id="shops-btn" href="/shops">
-            მაღაზიები
-          </a>
-        </div>
+        </p>
+        <a className="shops-btn" href="/shops">
+          მაღაზიები
+        </a>
       </div>
       <section className="desciption-box">
         <div className="column">
