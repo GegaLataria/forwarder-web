@@ -1,5 +1,5 @@
 .order {
-    margin-top: 4.4vw;
+    margin-top: 1.5vw;
     background-color: #FEBDAC;
     padding: 3.1vw 1.2vw;
     border-radius: 1.2vw;
@@ -39,16 +39,72 @@
     font-weight: 700;
 }
 
+.services {
+    margin-top: 3vw;
+    padding: 5vw 3vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.services__list__item {
+    margin-left: 5px;
+    flex: 25%;
+    padding: 5px;
+    background-color: red;
+}
+
+
+
 .youtube {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 2.5vw;
-    margin-left: 2.5vw;
-    width: 80%;
-    transform: translate(15%, 0%);
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.youtube__header {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 2.5vw;
+    text-align: center;
 }
 
 .youtube__link {
-    height: 36vw;
+    height: 38vw;
+}
+
+@media (max-width: 768px) {
+    .order__text__header {
+        font-size: 16px;
+    }
+    .order__text__input {
+        font-size: 14.5px;
+    }
+    .order__contact{
+        display: block;
+    }
+    .order__contact__item {
+        width: 100%;
+        padding: 3px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .order__contact__item__header {
+        font-size: 14px;
+    }
+    .order__contact__item__input {
+        font-size: 14px;
+    }
+    .youtube__header {
+        font-size: 18px;
+    }
+    .youtube__link {
+        width: 80%;
+        height: 220px;
+    }
 }

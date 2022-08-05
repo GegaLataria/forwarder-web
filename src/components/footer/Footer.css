@@ -34,5 +34,10 @@
 }
 
 @media (max-width: 768px){
-
+    .footer__box__item{
+        font-size: 8px;
+    }
+    .footer__rights {
+        font-size: 8px;
+    }
 }
