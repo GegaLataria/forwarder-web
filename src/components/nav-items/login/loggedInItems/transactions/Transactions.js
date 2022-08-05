@@ -14,6 +14,7 @@ const Transactions = () => {
     return (
       <div className="transactions-page">
         <div className="login-column-left">
+          <h1 className="transactions-title">ტრანზაქციები</h1>
           <HelperTransactions
             className={"transactions-list"}
             logo={logo}
@@ -78,6 +79,56 @@ const Transactions = () => {
               ).toFixed(1) + "₾"
             }
           />
+          <HelperTransactions
+            className={"transactions-list"}
+            logo={logo}
+            actionType={"ტიპი"}
+            dataType={"ჩარიცხვა"}
+            weightText={"წონა"}
+            weight={value.loggedInUser.transactions.weightFour + "კგ"}
+            date={value.loggedInUser.transactions.dateFour}
+            money={
+              (
+                value.loggedInUser.transactions.weightFour *
+                usdCurrency *
+                pricePerKg
+              ).toFixed(1) + "₾"
+            }
+          />
+          <div className="only-for-mobile">
+            <HelperTransactions
+              className={"transactions-list"}
+              logo={logo}
+              actionType={"ტიპი"}
+              dataType={"ჩარიცხვა"}
+              weightText={"წონა"}
+              weight={value.loggedInUser.transactions.weightFour + "კგ"}
+              date={value.loggedInUser.transactions.dateFour}
+              money={
+                (
+                  value.loggedInUser.transactions.weightFour *
+                  usdCurrency *
+                  pricePerKg
+                ).toFixed(1) + "₾"
+              }
+            />
+            <HelperTransactions
+              className={"transactions-list"}
+              logo={logo}
+              actionType={"ტიპი"}
+              dataType={"ჩარიცხვა"}
+              weightText={"წონა"}
+              weight={value.loggedInUser.transactions.weightFour + "კგ"}
+              date={value.loggedInUser.transactions.dateFour}
+              money={
+                (
+                  value.loggedInUser.transactions.weightFour *
+                  usdCurrency *
+                  pricePerKg
+                ).toFixed(1) + "₾"
+              }
+            />
+          </div>
         </div>
         <LoggedInBar user={value.loggedInUser} />
       </div>

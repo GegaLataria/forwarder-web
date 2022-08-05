@@ -23,3 +23,15 @@
     width: 5vw;
     height: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .transactions-list__item__title {
+        font-size: 14px;
+    }
+    .transactions-list__item__input {
+        font-size: 14px;
+    }
+    .transactions-list__item__logo {
+        width: 60px;
+    }
+}

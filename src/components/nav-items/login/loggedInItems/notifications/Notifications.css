@@ -1,5 +1,13 @@
 .notifications-page {
     display: flex;
+    margin-bottom: 30px;
+}
+
+.notifications-title {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: -2vw;   
+    margin-bottom: 2.5vw;
 }
 
 .notifications-list {
@@ -28,4 +36,21 @@
 .notifications-list__item__right-title {
     margin-right: 3vw;
     float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .notifications-list__item__left-title {
+        font-size: 12px;
+    }
+    .notifications-title {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .notifications-list__item__right-title {
+        font-size: 12px;
+    }
+    .notifications-list__item__text {
+        font-size: 14px;
+    }
 }

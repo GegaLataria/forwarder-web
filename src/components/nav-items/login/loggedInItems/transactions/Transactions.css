@@ -1,3 +1,26 @@
 .transactions-page {
     display: flex;
+    margin-bottom: 30px;
+}
+
+.only-for-mobile {
+    display: none;
+}
+
+.transactions-title {
+    margin-top: 2vw;
+    margin-bottom: -2vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .transactions-title{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .only-for-mobile {
+        display: block;
+    }
 }

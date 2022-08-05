@@ -11,6 +11,7 @@ const Notifications = () => {
       <div className="notifications-page">
         <div className="login-column-left">
           <div className="notifications-list">
+            <h1 className="notifications-title">შეტყობინებები</h1>
             <div className="notifications-list__item">
               <h3 className="notifications-list__item__left-title">
                 მისამართი შეიცვალა

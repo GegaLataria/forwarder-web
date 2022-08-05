@@ -1,6 +1,7 @@
 .parcels-list {
     margin-top: 4.4vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 }
@@ -23,4 +24,14 @@
     font-size: 1.5vw;
     text-decoration: none;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .parcels-list__item {
+        width: 100%;
+        padding: 20px;
+    }
+    .parcels-list__item__link {
+        font-size: 18px;
+    }
 }

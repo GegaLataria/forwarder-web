@@ -12,6 +12,7 @@
 }
 
 .log-out-but{
+    font-size: 1.1vw;
     margin-top: 2vw;
     background-color: #918D8B;
     border: none;
@@ -24,14 +25,13 @@
 
 .currency-tab {
     
-
     /* margin-left: 2vw; */
     margin-top: 2vw;
     font-size: 1vw;
     border-radius: 10px;
     color: #FFF;
     /* padding: 2vw 2vw; */
-    padding: 1vw 1vw;
+    padding: 1.2vw 1vw;
     text-align: center;
     width: 12vw;
     background-color: rgb(102,195,173);
@@ -57,7 +57,7 @@
 }
 
 .login-column-right__card__info {
-    font-size: 1.2vw;   
+    font-size: 1.3vw;   
 }
 
 .horizontal-line {
@@ -65,7 +65,7 @@
 }
 
 .debt-text {
-    font-size: 1vw;
+    font-size: 1.05vw;
 }
 
 .login-column-right__list {
@@ -93,4 +93,36 @@
 .selectedItem {
     color: #FD8467;
     transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .currency-logout-container {
+        display: none;
+    }
+    .login-column-right__container {
+        display: none;
+    }
+    .login-column-right {
+        position: fixed;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        margin-left: 0px;
+        border-radius: 0;
+        width: 100%;
+    }
+    .login-column-right__list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .login-column-right__list__item {
+        font-size: 10px;
+    }
+    .linkLogo {
+        width: 15px;
+    }
+    .footer {
+        margin-bottom: 85px;
+    }
 }
