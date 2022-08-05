@@ -36,3 +36,24 @@
     font-size: 1.2vw;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 768px) {
+    .calculator {
+        height: 700px;
+    }
+
+    .calculator__title {
+        font-size: 18px;
+    }
+    .calculator__item {
+        font-size: 16px;
+    }
+    .calculator__item__input {
+        height: 30px;
+        width: 50%;
+    }
+    .calculator__button {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}

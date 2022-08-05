@@ -1,7 +1,16 @@
+.map__contact {
+    background-color: #fff;
+    padding: 3vw 3vw 5vw 3vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 10px;
+}
+
 .map {
     display: flex;
     justify-content: center;
-    margin-top: 2vw;
 }
 
 .contact__text {
@@ -12,4 +21,24 @@
 
 .contact__text__header {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__text {
+        font-size: 14px;
+    }
+    .contact__text__header {
+        font-size: 15px;
+    }
+    .contact__text__input {
+        font-size: 14px;
+    }
+    .map__contact {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+    .map__contact__title {
+        font-size: 18px;
+    }
+   
 }

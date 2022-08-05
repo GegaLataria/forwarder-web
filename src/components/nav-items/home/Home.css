@@ -5,7 +5,7 @@
     text-align: center;
     font-size: 2vw;
     padding: 4vw 3vw;
-    margin-top: 1.5vw;
+    margin-top: 3vw;
     color:#fff
 }
 
@@ -42,10 +42,6 @@
 .desc-p {
     line-height: 1.2;
     color:rgba(0, 0, 0, 0.7);
-
-
-    /* newly added */
-    /* font-size: 16px; */
 }
 
 #get-more-btn {
@@ -132,7 +128,7 @@
     align-items: center;
     flex: 50%;
     padding: 0.6vw;
-    transform: translate(0, -15%);
+    transform: translate(0, -10%);
 }
 
 .contact-info {
@@ -142,7 +138,7 @@
     margin-top: 7.5vw;
 }
 
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
     .desciption-box {
         display: block;
     }

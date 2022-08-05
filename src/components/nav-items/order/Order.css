@@ -1,5 +1,5 @@
 .order {
-    margin-top: 1.5vw;
+    margin-top: 3vw;
     background-color: #FEBDAC;
     padding: 3.1vw 1.2vw;
     border-radius: 1.2vw;
@@ -40,26 +40,41 @@
 }
 
 .services {
-    margin-top: 3vw;
-    padding: 5vw 3vw;
+    margin-top: 4vw;
+    padding: 1.5vw 3vw 5vw 3vw;
     background-color: white;
     border-radius: 10px;
+}
+
+.services__title {
+    text-align: center;
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
 }
 
 .services__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
 }
 
 .services__list__item {
     margin-left: 5px;
     flex: 25%;
-    padding: 5px;
-    background-color: red;
+    padding: 1vw 2vw;
+    background-color: rgba(81, 81, 81, 0.05);
+    border-radius: 10px;
 }
 
+.services__list__item__header {
+    font-size: 1.5vw;
+}
 
+.services__list__item__input {
+    font-weight: 500;
+    font-size: 1.2vw;
+}
 
 .youtube {
     display: flex;
@@ -68,7 +83,7 @@
 }
 
 .youtube__header {
-    margin-top: 3vw;
+    margin-top: 4vw;
     margin-bottom: 3vw;
     font-size: 2.5vw;
     text-align: center;
@@ -78,7 +93,10 @@
     height: 38vw;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    .order {
+        padding: 15px;
+    }
     .order__text__header {
         font-size: 16px;
     }
@@ -106,5 +124,24 @@
     .youtube__link {
         width: 80%;
         height: 220px;
+    }
+    .services__title {
+        font-size: 18px;
+    }
+    .services__list {
+        flex-direction: column;
+    }
+    .services__list__item {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .services__list__item__header {
+        font-size: 16px;
+    }
+    .services__list__item__hr {
+        display: block;
+    }
+    .services__list__item__input {
+        font-size: 14px;
     }
 }

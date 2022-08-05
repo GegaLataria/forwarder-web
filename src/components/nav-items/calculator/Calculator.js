@@ -56,6 +56,9 @@ const buildCalculatorScreen = () => {
           <p id="weight-result"></p>
         </div>
       </section>
+      <div className="calculator__title">
+        <p>მოცულობითი წონის გამოთვლა</p>
+      </div>
     </div>
   );
 };

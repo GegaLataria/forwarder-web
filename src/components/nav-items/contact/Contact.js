@@ -16,25 +16,28 @@ const buildContactScreen = () => {
         <div className="order__contact">
           <div className="order__contact__item">
             <p className="contact__text__header">ტელეფონი</p>
-            <p>555123456</p>
+            <p className="contact__text__input">555123456</p>
           </div>
           <div className="order__contact__item">
             <p className="contact__text__header">ელ.ფოსტა</p>
-            <p>info@company.ge</p>
+            <p className="contact__text__input">info@company.ge</p>
           </div>
           <div className="order__contact__item">
             <p className="contact__text__header">მისამართი</p>
-            <p>ლორთქიფანიძის 26</p>
+            <p className="contact__text__input">ლორთქიფანიძის 26</p>
           </div>
           <div className="order__contact__item">
             <p className="contact__text__header">საათები: 10:00-19:00</p>
-            <p>ორშაბათი-პარასკევი</p>
+            <p className="contact__text__input">ორშაბათი-პარასკევი</p>
           </div>
         </div>
       </section>
-      <section className="map">
-        <WebMap />
-      </section>
+      <div className="map__contact">
+        <h2 className="map__contact__title">მისამართი</h2>
+        <section className="map">
+          <WebMap />
+        </section>
+      </div>
     </div>
   );
 };
