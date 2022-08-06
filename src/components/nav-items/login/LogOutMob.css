@@ -1,0 +1,14 @@
+.logout-button-mobile {
+    margin-top: 2vw;
+    background-color: #FD8467;
+    border: #FD8467;
+    padding: 1vw 1.5vw;
+    border-radius: 1vw;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .logout-button-mobile {
+        display: none;
+    }
+}

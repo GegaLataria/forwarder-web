@@ -17,7 +17,7 @@ import Transactions from "./nav-items/login/loggedInItems/transactions/Transacti
 import SentParcels from "./nav-items/login/loggedInItems/parcels/allParcels/SentParcels";
 import ArrivedParcels from "./nav-items/login/loggedInItems/parcels/allParcels/ArrivedParcels";
 import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/TakenParcels";
-import LoggedInBar from "./nav-items/login/loggedInItems/loggedInBar/LoggedInBar";
+import LogOutMob from "./nav-items/login/LogOutMob";
 
 export const Context = React.createContext();
 
@@ -52,6 +52,7 @@ const App = () => {
             <Route path="/contact">
               <Contact />
             </Route>
+            <Route path="/login">{loggedInUser ? <LogOutMob /> : ""}</Route>
             <Route exact path="/login">
               <Login />
             </Route>

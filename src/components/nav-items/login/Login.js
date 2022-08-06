@@ -126,7 +126,6 @@ const Login = () => {
               value="Login"
             ></input>
           </div>
-          {/* {!isSubmitted ? <div>incorrect info</div> : ""} */}
         </form>
       </div>
     );
