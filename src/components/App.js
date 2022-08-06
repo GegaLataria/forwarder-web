@@ -17,6 +17,7 @@ import Transactions from "./nav-items/login/loggedInItems/transactions/Transacti
 import SentParcels from "./nav-items/login/loggedInItems/parcels/allParcels/SentParcels";
 import ArrivedParcels from "./nav-items/login/loggedInItems/parcels/allParcels/ArrivedParcels";
 import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/TakenParcels";
+import LoggedInBar from "./nav-items/login/loggedInItems/loggedInBar/LoggedInBar";
 
 export const Context = React.createContext();
 
