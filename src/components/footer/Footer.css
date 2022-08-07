@@ -34,6 +34,9 @@
 }
 
 @media only screen and (max-width: 768px){
+    .mob-footer {
+        margin-bottom: 85px;
+    }
     .footer__box__item{
         font-size: 8px;
     }

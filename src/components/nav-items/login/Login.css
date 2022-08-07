@@ -6,8 +6,8 @@
 }
 
 .login-form {
-  width: 35vw;
-  height: 30vw;
+  width: 40vw;
+  height: 35vw;
   background-color: rgb(255, 241, 236);
   display: flex;
   align-items:center;
@@ -22,11 +22,11 @@
 }
 
 .login-form__item__title {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 .login-form__item__input {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   width: 17vw;
   height: 3vw;
   border: 1px solid #FD8467;
@@ -39,8 +39,8 @@
   background-color: #FD8467;
   border-color: #FD8467;
   color:#FFF;
-  padding: .6vw 1.85vw;
-  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  font-size: 1.7vw;
 }
 
 @media only screen and (max-width: 768px) {

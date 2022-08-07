@@ -123,7 +123,7 @@ const Login = () => {
               className="login-form__button"
               type={"submit"}
               onClick={handleSubmit}
-              value="Login"
+              value="შესვლა"
             ></input>
           </div>
         </form>

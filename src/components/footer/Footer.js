@@ -5,7 +5,11 @@ import { MyLink } from "./MyLink";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div
+      className={`footer ${
+        useLocation().pathname.includes("/login") ? "mob-footer" : ""
+      }`}
+    >
       <div className="footer__box">
         <div className="footer__box__item">
           <MyLink
