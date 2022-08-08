@@ -79,15 +79,25 @@ const database = [
 const Login = () => {
   const value = React.useContext(Context);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessages, setErrorMessages] = useState("");
+
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
     const userData = database.find((user) => user.email === uname.value);
+    if (!uname.value || !pass.value) {
+      return setErrorMessages("You must fill both inputs");
+    }
     if (userData) {
       if (userData.password === pass.value) {
+        setErrorMessages("");
         setIsSubmitted(true);
         value.setLoggedInUser(userData);
+      } else {
+        setErrorMessages("Invalid Username or Password");
       }
+    } else {
+      setErrorMessages("Invalid Username or Password");
     }
   };
   useEffect(() => {
@@ -126,6 +136,11 @@ const Login = () => {
               value="შესვლა"
             ></input>
           </div>
+          {!value.loggedInUser && errorMessages ? (
+            <h2 className="incorrect-message">{errorMessages}</h2>
+          ) : (
+            ""
+          )}
         </form>
       </div>
     );
