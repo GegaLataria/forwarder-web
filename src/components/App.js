@@ -18,6 +18,7 @@ import SentParcels from "./nav-items/login/loggedInItems/parcels/allParcels/Sent
 import ArrivedParcels from "./nav-items/login/loggedInItems/parcels/allParcels/ArrivedParcels";
 import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/TakenParcels";
 import LogOutMob from "./nav-items/login/LogOutMob";
+import { MissingPath } from "./MissingPath";
 
 export const Context = React.createContext();
 
@@ -34,6 +35,9 @@ const App = () => {
         <Context.Provider value={{ loggedInUser, setLoggedInUser }}>
           <Header />
           <div>
+            <Route path={"*"}>
+              <MissingPath />
+            </Route>
             <Route exact path="/main">
               <Home />
             </Route>
