@@ -29,9 +29,9 @@
 @media only screen and (max-width: 768px) {
     .parcels-list__item {
         width: 100%;
-        padding: 20px;
+        padding: 15px;
     }
     .parcels-list__item__link {
-        font-size: 18px;
+        font-size: 20px;
     }
 }

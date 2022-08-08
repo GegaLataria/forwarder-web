@@ -35,9 +35,6 @@ const App = () => {
         <Context.Provider value={{ loggedInUser, setLoggedInUser }}>
           <Header />
           <div>
-            <Route path={"*"}>
-              <MissingPath />
-            </Route>
             <Route exact path="/main">
               <Home />
             </Route>
@@ -80,6 +77,9 @@ const App = () => {
             </Route>
             <Route path={"/login/parcels/taken"}>
               <TakenParcels />
+            </Route>
+            <Route exact path={"/"}>
+              <MissingPath />
             </Route>
           </div>
           <Footer />
