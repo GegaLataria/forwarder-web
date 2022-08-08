@@ -5,7 +5,19 @@ import "./ParcelsList.css";
 const ParcelsList = () => {
   return (
     <div className="parcels-list">
-      <div className="parcels-list__item">
+      <a className="parcels-list__item" href="/login/parcels">
+        <p className="parcels-list__item__link">საწყობში</p>
+      </a>
+      <a className="parcels-list__item" href="/login/parcels/sent">
+        <p className="parcels-list__item__link">გამოგზავნილი</p>
+      </a>
+      <a className="parcels-list__item" href="/login/parcels/arrived">
+        <p className="parcels-list__item__link">ჩამოსული</p>
+      </a>
+      <a className="parcels-list__item" href="/login/parcels/taken">
+        <p className="parcels-list__item__link">გაცემული</p>
+      </a>
+      {/* <div className="parcels-list__item">
         <MyLink
           className="parcels-list__item__link"
           text={"საწყობში"}
@@ -32,7 +44,7 @@ const ParcelsList = () => {
           text={"გაცემული"}
           to={"/login/parcels/taken"}
         ></MyLink>
-      </div>
+      </div> */}
     </div>
   );
 };
