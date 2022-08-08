@@ -6,6 +6,7 @@ import HelperTransactions from "../../transactions/HelperTransactions";
 import "./Parcels.css";
 import ParcelsList from "../ParcelsList";
 import logo from "./parcel.png";
+import Login from "../../../Login";
 
 const Parcels = () => {
   const value = React.useContext(Context);
@@ -73,7 +74,7 @@ const Parcels = () => {
       </div>
     );
   }
-  return <Home />;
+  return <Login />;
 };
 
 export default Parcels;

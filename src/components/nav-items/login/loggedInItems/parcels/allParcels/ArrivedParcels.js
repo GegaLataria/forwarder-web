@@ -5,6 +5,7 @@ import LoggedInBar from "../../loggedInBar/LoggedInBar";
 import HelperTransactions from "../../transactions/HelperTransactions";
 import logo from "./parcel.png";
 import ParcelsList from "../ParcelsList";
+import Login from "../../../Login";
 
 const ArrivedParcels = () => {
   const value = useContext(Context);
@@ -72,7 +73,7 @@ const ArrivedParcels = () => {
       </div>
     );
   }
-  return <Home />;
+  return <Login />;
 };
 
 export default ArrivedParcels;

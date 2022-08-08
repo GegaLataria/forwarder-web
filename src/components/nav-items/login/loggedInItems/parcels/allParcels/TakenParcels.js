@@ -1,10 +1,10 @@
 import React from "react";
 import { Context } from "../../../../../App";
-import Home from "../../../../home/Home";
 import LoggedInBar from "../../loggedInBar/LoggedInBar";
 import ParcelsList from "../ParcelsList";
 import logo from "./parcel.png";
 import HelperTransactions from "../../transactions/HelperTransactions";
+import Login from "../../../Login";
 
 const TakenParcels = () => {
   const value = React.useContext(Context);
@@ -72,7 +72,7 @@ const TakenParcels = () => {
       </div>
     );
   }
-  return <Home />;
+  return <Login />;
 };
 
 export default TakenParcels;

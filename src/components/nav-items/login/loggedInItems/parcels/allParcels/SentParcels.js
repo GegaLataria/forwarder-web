@@ -5,6 +5,7 @@ import LoggedInBar from "../../loggedInBar/LoggedInBar";
 import ParcelsList from "../ParcelsList";
 import logo from "./parcel.png";
 import HelperTransactions from "../../transactions/HelperTransactions";
+import Login from "../../../Login";
 
 const SentParcels = () => {
   const value = useContext(Context);
@@ -72,7 +73,7 @@ const SentParcels = () => {
       </div>
     );
   }
-  return <Home />;
+  return <Login />;
 };
 
 export default SentParcels;

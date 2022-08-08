@@ -12,7 +12,11 @@ export const MyLink = ({
   selectedClassname,
 }) => {
   const location = useLocation();
-  const isSelected = to === location.pathname;
+  let isSelected = to === location.pathname;
+
+  if (location.pathname.includes("/login") && text !== "მისამართები") {
+    isSelected = location.pathname.includes(to);
+  }
 
   return (
     <Link

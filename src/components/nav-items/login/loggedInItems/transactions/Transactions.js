@@ -3,8 +3,9 @@ import { Context } from "../../../../App";
 import LoggedInBar from "../loggedInBar/LoggedInBar";
 import "./Transactions.css";
 import HelperTransactions from "./HelperTransactions";
-import Home from "../../../home/Home";
+// import Home from "../../../home/Home";
 import logo from "./transactions.png";
+import Login from "../../Login";
 
 const Transactions = () => {
   const value = useContext(Context);
@@ -137,7 +138,7 @@ const Transactions = () => {
       </div>
     );
   }
-  return <Home />;
+  return <Login />;
 };
 
 export default Transactions;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Context } from "../../../../App";
 import Home from "../../../home/Home";
+import Login from "../../Login";
 import LoggedInBar from "../loggedInBar/LoggedInBar";
 import "./Notifications.css";
 
@@ -66,7 +67,7 @@ const Notifications = () => {
       </div>
     );
   }
-  return <Home />;
+  return <Login />;
 };
 
 export default Notifications;

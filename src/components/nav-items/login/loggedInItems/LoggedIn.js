@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import "./LoggedIn.css";
 import LoggedInBar from "./loggedInBar/LoggedInBar";
 
 const LoggedIn = ({ user, setUser }) => {
-  const handleClick = () => {
-    window.localStorage.removeItem("user");
-    setUser("");
-  };
   return (
     <div className="loggedInPage">
       <div className="login-column-left">
-        {/* <button className="sign-out-button" onClick={handleClick}>
-          Log out
-        </button> */}
         <div className="address-countries-container">
           <div className="address-box">
             <div className="address-box__text">
