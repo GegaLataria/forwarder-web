@@ -65,7 +65,10 @@ const TakenParcels = () => {
             />
           </div>
         </div>
-        <LoggedInBar user={value.loggedInUser} />
+        <LoggedInBar
+          user={value.loggedInUser}
+          setUser={value.setLoggedInUser}
+        />
       </div>
     );
   }

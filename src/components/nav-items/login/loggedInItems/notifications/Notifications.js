@@ -59,7 +59,10 @@ const Notifications = () => {
             </div>
           </div>
         </div>
-        <LoggedInBar user={value.loggedInUser} />
+        <LoggedInBar
+          user={value.loggedInUser}
+          setUser={value.setLoggedInUser}
+        />
       </div>
     );
   }
