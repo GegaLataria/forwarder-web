@@ -12,7 +12,6 @@ const LogOutMob = () => {
     <div>
       <button onClick={handleClick} className="logout-button-mobile">
         Log Out
-        {/* <a href="/login">Log Out</a> */}
       </button>
     </div>
   );
