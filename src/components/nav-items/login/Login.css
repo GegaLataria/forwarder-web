@@ -52,6 +52,16 @@
   animation: spin 2s linear infinite;
 }
 
+.register-button {
+  margin-top: 2vw;
+  background-color: #FD8467;
+  text-decoration: none;
+  color: #FFF;
+  border-radius: .5vw;
+  font-size: .7vw;
+  padding: 1vw;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

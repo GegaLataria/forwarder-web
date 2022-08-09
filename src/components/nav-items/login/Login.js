@@ -100,6 +100,7 @@ const Login = () => {
       setErrorMessages("Invalid Username or Password");
     }
   };
+
   useEffect(() => {
     if (value.loggedInUser.length !== 0) {
       window.localStorage.setItem("user", JSON.stringify(value.loggedInUser));
@@ -136,6 +137,9 @@ const Login = () => {
               value="შესვლა"
             ></input>
           </div>
+          <a className="register-button" href="/register">
+            რეგისტრაცია
+          </a>
 
           {!value.loggedInUser && errorMessages ? (
             <h2 className="incorrect-message">{errorMessages}</h2>

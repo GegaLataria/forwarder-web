@@ -19,6 +19,7 @@ import ArrivedParcels from "./nav-items/login/loggedInItems/parcels/allParcels/A
 import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/TakenParcels";
 import LogOutMob from "./nav-items/login/LogOutMob";
 import { MissingPath } from "./MissingPath";
+import Register from "./nav-items/login/Register";
 
 export const Context = React.createContext();
 
@@ -56,6 +57,9 @@ const App = () => {
             <Route path="/login">{loggedInUser ? <LogOutMob /> : ""}</Route>
             <Route exact path="/login">
               <Login />
+            </Route>
+            <Route path={"/register"}>
+              <Register />
             </Route>
             <Route path="/terms-and-conditions">
               <Conditions />
