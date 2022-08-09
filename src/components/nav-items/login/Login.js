@@ -78,15 +78,20 @@ const database = [
 
 const Login = () => {
   const value = React.useContext(Context);
-  const [registered, setRegistered] = useState(database);
-  console.log(document.forms);
+  // const [registered, setRegistered] = useState(database);
+  // useEffect(() => {
+  //   window.localStorage.setItem("registered", JSON.stringify(database));
+  // }, [database]);
+
+  const registeredUsers = JSON.parse(localStorage.getItem("registered"));
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessages, setErrorMessages] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
-    const userData = database.find((user) => user.email === uname.value);
+    const userData = registeredUsers.find((user) => user.email === uname.value);
+
     if (!uname.value || !pass.value) {
       return setErrorMessages("You must fill both inputs");
     }
