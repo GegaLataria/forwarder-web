@@ -78,6 +78,8 @@ const database = [
 
 const Login = () => {
   const value = React.useContext(Context);
+  const [registered, setRegistered] = useState(database);
+  console.log(document.forms);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessages, setErrorMessages] = useState("");
 

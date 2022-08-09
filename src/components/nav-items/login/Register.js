@@ -2,9 +2,13 @@ import React from "react";
 import "./Register.css";
 
 const Register = () => {
+  console.log(document.forms);
+  const handleRegister = () => {
+    console.log(JSON.parse(window.localStorage.getItem("user")));
+  };
   return (
     <div className="login-container">
-      <div className="login-form">
+      <form className="login-form">
         <div className="register-form__item">
           <p className="register-title">სახელი</p>
           <input
@@ -15,7 +19,7 @@ const Register = () => {
           ></input>
         </div>
         <div className="register-form__item">
-          <p className="register-title">სახელი</p>
+          <p className="register-title">გვარი</p>
           <input
             className="login-form__item__input"
             name="register-lastname"
@@ -24,7 +28,7 @@ const Register = () => {
           ></input>
         </div>
         <div className="register-form__item">
-          <p className="register-title">სახელი</p>
+          <p className="register-title">ელ.ფოსტა</p>
           <input
             className="login-form__item__input"
             name="register-email"
@@ -33,7 +37,7 @@ const Register = () => {
           ></input>
         </div>
         <div className="register-form__item">
-          <p className="register-title">სახელი</p>
+          <p className="register-title">ტელეფონი</p>
           <input
             className="login-form__item__input"
             name="register-number"
@@ -41,8 +45,10 @@ const Register = () => {
             required
           ></input>
         </div>
-        <button className="register-button">რეგისტრაცია</button>
-      </div>
+        <button onClick={handleRegister} className="register-button">
+          რეგისტრაცია
+        </button>
+      </form>
     </div>
   );
 };

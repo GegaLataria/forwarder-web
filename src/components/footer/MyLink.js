@@ -14,6 +14,10 @@ export const MyLink = ({
   const location = useLocation();
   let isSelected = to === location.pathname;
 
+  if (location.pathname === "/register") {
+    isSelected = to === "/login";
+  }
+
   if (location.pathname.includes("/login") && text !== "მისამართები") {
     isSelected = location.pathname.includes(to);
   }
