@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Register.css";
 
 const Register = () => {
+  const [errorMessages, setErrorMessages] = useState("");
+
   const handleRegister = (event) => {
     event.preventDefault();
     const defaultParcels = JSON.parse(localStorage.getItem("registered"))[0]
@@ -9,24 +11,39 @@ const Register = () => {
     const defaultTransactions = JSON.parse(
       localStorage.getItem("registered")
     )[0].transactions;
-    let array = {
-      firstName: document.forms[0].registerFirstname.value,
-      lastName: document.forms[0].registerLastname.value,
-      email: document.forms[0].registerEmail.value,
-      password: document.forms[0].registerPassword.value,
-      parcels: defaultParcels,
-      transactions: defaultTransactions,
-      phoneNumber: "555123456",
-      addressOneTurkey: "Istanbul",
-      addressTwoTurkey: "Fatih",
-      addressThreeTurkey: "Aksaray Mah",
-      zipCodeTurkey: "34096",
-    };
-    const newRegistered = [
-      ...JSON.parse(localStorage.getItem("registered")),
-      array,
-    ];
-    window.localStorage.setItem("registered", JSON.stringify(newRegistered));
+    if (
+      document.forms[0].registerFirstname.value &&
+      document.forms[0].registerLastname.value &&
+      document.forms[0].registerEmail.value &&
+      document.forms[0].registerPassword.value
+    ) {
+      let array = {
+        firstName: document.forms[0].registerFirstname.value,
+        lastName: document.forms[0].registerLastname.value,
+        email: document.forms[0].registerEmail.value,
+        password: document.forms[0].registerPassword.value,
+        parcels: defaultParcels,
+        transactions: defaultTransactions,
+        phoneNumber: "555123456",
+        addressOneTurkey: "Istanbul",
+        addressTwoTurkey: "Fatih",
+        addressThreeTurkey: "Aksaray Mah",
+        zipCodeTurkey: "34096",
+      };
+      const newRegistered = [
+        ...JSON.parse(localStorage.getItem("registered")),
+        array,
+      ];
+
+      setErrorMessages("თქვენ წარმატებით გაიარეთ რეგისტრაცია");
+      window.localStorage.setItem("registered", JSON.stringify(newRegistered));
+    } else {
+      setErrorMessages("შეავსეთ ყველა ცარიელი ველი");
+    }
+  };
+
+  const inputChange = () => {
+    setErrorMessages("");
   };
   return (
     <div className="login-container">
@@ -37,6 +54,7 @@ const Register = () => {
             className="login-form__item__input"
             name="registerFirstname"
             type={"text"}
+            onChange={inputChange}
             required
           ></input>
         </div>
@@ -46,6 +64,7 @@ const Register = () => {
             className="login-form__item__input"
             name="registerLastname"
             type={"text"}
+            onChange={inputChange}
             required
           ></input>
         </div>
@@ -55,6 +74,7 @@ const Register = () => {
             className="login-form__item__input"
             name="registerEmail"
             type={"email"}
+            onChange={inputChange}
             required
           ></input>
         </div>
@@ -64,12 +84,18 @@ const Register = () => {
             className="login-form__item__input"
             name="registerPassword"
             type={"password"}
+            onChange={inputChange}
             required
           ></input>
         </div>
         <button onClick={handleRegister} className="register-button">
           რეგისტრაცია
         </button>
+        {errorMessages ? (
+          <h2 className="incorrect-message">{errorMessages}</h2>
+        ) : (
+          ""
+        )}
       </form>
     </div>
   );

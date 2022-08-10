@@ -87,13 +87,17 @@ const Login = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessages, setErrorMessages] = useState("");
 
+  const inputChange = () => {
+    setErrorMessages("");
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     let { uname, pass } = document.forms[0];
     const userData = registeredUsers.find((user) => user.email === uname.value);
 
     if (!uname.value || !pass.value) {
-      return setErrorMessages("You must fill both inputs");
+      return setErrorMessages("შეავსეთ ყველა ცარიელი ველი");
     }
     if (userData) {
       if (userData.password === pass.value) {
@@ -101,10 +105,10 @@ const Login = () => {
         setIsSubmitted(true);
         value.setLoggedInUser(userData);
       } else {
-        setErrorMessages("Invalid Username or Password");
+        setErrorMessages("არასწორი მომხმარებელი ან პაროლი");
       }
     } else {
-      setErrorMessages("Invalid Username or Password");
+      setErrorMessages("არასწორი მომხმარებელი ან პაროლი");
     }
   };
 
@@ -124,6 +128,7 @@ const Login = () => {
               className="login-form__item__input"
               name="uname"
               type={"email"}
+              onChange={inputChange}
               required
             ></input>
           </div>
@@ -133,6 +138,7 @@ const Login = () => {
               className="login-form__item__input"
               name="pass"
               type={"password"}
+              onChange={inputChange}
               required
             ></input>
           </div>
