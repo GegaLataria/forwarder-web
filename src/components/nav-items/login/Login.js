@@ -78,9 +78,12 @@ const database = [
 
 const Login = () => {
   const value = React.useContext(Context);
+
   // const [registered, setRegistered] = useState(database);
   // useEffect(() => {
-  // window.localStorage.setItem("registered", JSON.stringify(database));
+  if (!JSON.parse(localStorage.getItem("registered"))) {
+    window.localStorage.setItem("registered", JSON.stringify(database));
+  }
   // }, [database]);
 
   const registeredUsers = JSON.parse(localStorage.getItem("registered"));
