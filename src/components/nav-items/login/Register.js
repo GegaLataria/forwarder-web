@@ -3,6 +3,7 @@ import "./Register.css";
 
 const Register = () => {
   const [errorMessages, setErrorMessages] = useState("");
+  const [registered, setRegistered] = useState(false);
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -30,14 +31,32 @@ const Register = () => {
         addressThreeTurkey: "Aksaray Mah",
         zipCodeTurkey: "34096",
       };
-      const newRegistered = [
-        ...JSON.parse(localStorage.getItem("registered")),
-        array,
-      ];
 
-      setErrorMessages("თქვენ წარმატებით გაიარეთ რეგისტრაცია");
-      window.localStorage.setItem("registered", JSON.stringify(newRegistered));
+      const existingList = JSON.parse(localStorage.getItem("registered"));
+      if (
+        existingList.filter((users) => users.email === array.email).length > 0
+      ) {
+        setRegistered(false);
+        setErrorMessages("ელ.ფოსტა უკვე დარეგისტრირებულია");
+      } else {
+        const newRegistered = [
+          ...JSON.parse(localStorage.getItem("registered")),
+          array,
+        ];
+
+        setRegistered(true);
+        setErrorMessages("თქვენ წარმატებით გაიარეთ რეგისტრაცია");
+        window.localStorage.setItem(
+          "registered",
+          JSON.stringify(newRegistered)
+        );
+        document.forms[0].registerFirstname.value = "";
+        document.forms[0].registerLastname.value = "";
+        document.forms[0].registerEmail.value = "";
+        document.forms[0].registerPassword.value = "";
+      }
     } else {
+      setRegistered(false);
       setErrorMessages("შეავსეთ ყველა ცარიელი ველი");
     }
   };
@@ -93,11 +112,7 @@ const Register = () => {
         </button>
         {errorMessages ? (
           <h2
-            className={
-              errorMessages !== "თქვენ წარმატებით გაიარეთ რეგისტრაცია"
-                ? "incorrect-message"
-                : "success-register"
-            }
+            className={!registered ? "incorrect-message" : "success-register"}
           >
             {errorMessages}
           </h2>
