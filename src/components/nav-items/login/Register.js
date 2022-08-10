@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Redirect, Route } from "react-router-dom";
+import { Context } from "../../App";
+import LoggedIn from "./loggedInItems/LoggedIn";
 import "./Register.css";
 
 const Register = () => {
+  const value = useContext(Context);
+
   const [errorMessages, setErrorMessages] = useState("");
   const [registered, setRegistered] = useState(false);
 
@@ -46,6 +51,10 @@ const Register = () => {
 
         setRegistered(true);
         setErrorMessages("თქვენ წარმატებით გაიარეთ რეგისტრაცია");
+        value.setLoggedInUser(array);
+        window.localStorage.setItem("user", JSON.stringify(value.loggedInUser));
+
+        // <LoggedIn user={value.loggedInUser} setUser={value.setLoggedInUser} />;
         window.localStorage.setItem(
           "registered",
           JSON.stringify(newRegistered)

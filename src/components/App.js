@@ -59,7 +59,7 @@ const App = () => {
               <Login />
             </Route>
             <Route path={"/register"}>
-              <Register />
+              {!loggedInUser ? <Register /> : <MissingPath path={"/login"} />}
             </Route>
             <Route path="/terms-and-conditions">
               <Conditions />
@@ -83,7 +83,7 @@ const App = () => {
               <TakenParcels />
             </Route>
             <Route exact path={"/"}>
-              <MissingPath />
+              <MissingPath path={"/main"} />
             </Route>
           </div>
           <Footer />

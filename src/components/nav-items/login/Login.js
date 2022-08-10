@@ -79,15 +79,11 @@ const database = [
 const Login = () => {
   const value = React.useContext(Context);
 
-  // const [registered, setRegistered] = useState(database);
-  // useEffect(() => {
   if (!JSON.parse(localStorage.getItem("registered"))) {
     window.localStorage.setItem("registered", JSON.stringify(database));
   }
-  // }, [database]);
 
   const registeredUsers = JSON.parse(localStorage.getItem("registered"));
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessages, setErrorMessages] = useState("");
 
   const inputChange = () => {
@@ -105,7 +101,6 @@ const Login = () => {
     if (userData) {
       if (userData.password === pass.value) {
         setErrorMessages("");
-        setIsSubmitted(true);
         value.setLoggedInUser(userData);
       } else {
         setErrorMessages("არასწორი მომხმარებელი ან პაროლი");
@@ -126,7 +121,7 @@ const Login = () => {
       <div className="login-container">
         <form className="login-form">
           <div className="login-form__item">
-            <p className="login-form__item__title">სახელი</p>
+            <p className="login-form__item__title">ელ.ფოსტა</p>
             <input
               className="login-form__item__input"
               name="uname"
