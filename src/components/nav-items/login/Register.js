@@ -92,7 +92,15 @@ const Register = () => {
           რეგისტრაცია
         </button>
         {errorMessages ? (
-          <h2 className="incorrect-message">{errorMessages}</h2>
+          <h2
+            className={
+              errorMessages !== "თქვენ წარმატებით გაიარეთ რეგისტრაცია"
+                ? "incorrect-message"
+                : "success-register"
+            }
+          >
+            {errorMessages}
+          </h2>
         ) : (
           ""
         )}

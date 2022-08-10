@@ -6,8 +6,8 @@
 }
 
 .login-form {
-  width: 40vw;
-  height: 35vw;
+  width: 45vw;
+  height: 40vw;
   background-color: rgb(255, 241, 236);
   display: flex;
   align-items:center;
@@ -70,7 +70,7 @@
 .incorrect-message {
   color: red;
   font-size: 1.5vw;
-  margin-bottom: -1vw;
+  /* margin-bottom: -1vw; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -97,7 +97,12 @@
     font-size: 16px;
     padding: 10px 20px;
   }
+  .register-button {
+    margin-top: 25px;
+    font-size: 11px;
+    padding: 5px 10px;
+  }
   .incorrect-message {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
