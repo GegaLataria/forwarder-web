@@ -32,6 +32,19 @@ const buildContactScreen = () => {
           </div>
         </div>
       </section>
+      <div className="about-us-container">
+        <p className="about-us-text">
+          ჩვენი გუნდი დაკომპლექტებულია პროფესიონალებით. ვთანამშრომლობთ 5000-ზე
+          მეტ ფიზიკურ პირთან და 300-ზე მეტ კომპანიასთან. თუ გსურთ მეტი გაიგოთ
+          ჩვენს გუნდზე, დააწკაპუნეთ ღილაკს.{" "}
+        </p>
+        <br></br>
+        <div className="about-us-button-container">
+          <a className="about-us-button" href="/about">
+            ჩვენი გუნდი
+          </a>
+        </div>
+      </div>
       <div className="map__contact">
         <h2 className="map__contact__title">მისამართი</h2>
         <section className="map">

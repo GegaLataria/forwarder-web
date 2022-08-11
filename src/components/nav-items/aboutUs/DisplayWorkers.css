@@ -1,0 +1,16 @@
+.workers-item {
+    background-color: rgba(253, 133, 103, 0.1);
+    padding: 2vw 2vw;
+    font-size: 1.2vw;
+    margin-bottom: 3vw;
+}
+
+.workers-name-text {
+    color: #FD8467;
+}
+
+@media only screen and (max-width: 768px) {
+    .workers-item {
+        font-size: 10px;
+    }
+}

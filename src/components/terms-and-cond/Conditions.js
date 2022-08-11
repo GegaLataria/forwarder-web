@@ -4,6 +4,7 @@ import "./Conditions.css";
 const Conditions = () => {
   return (
     <div className="conditions-page">
+      <h1 className="conditions-page__title">წესები და პირობები</h1>
       <p className="terms-section">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
         convallis arcu, sed lacinia dolor suscipit eget. Mauris molestie eros

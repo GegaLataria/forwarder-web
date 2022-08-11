@@ -5,3 +5,17 @@
 .terms-section {
     font-size: 1.5vw;
 }
+
+.conditions-page__title {
+    text-align: center;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .terms-section {
+        font-size: 14px;
+    }
+    .conditions-page__title {
+        font-size: 16px;
+    }
+}

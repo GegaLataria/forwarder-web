@@ -20,6 +20,7 @@ import TakenParcels from "./nav-items/login/loggedInItems/parcels/allParcels/Tak
 import LogOutMob from "./nav-items/login/LogOutMob";
 import { MissingPath } from "./MissingPath";
 import Register from "./nav-items/login/Register";
+import AboutUs from "./nav-items/aboutUs/AboutUs";
 
 export const Context = React.createContext();
 
@@ -81,6 +82,9 @@ const App = () => {
             </Route>
             <Route path={"/login/parcels/taken"}>
               <TakenParcels />
+            </Route>
+            <Route path={"/about"}>
+              <AboutUs />
             </Route>
             <Route exact path={"/"}>
               <MissingPath path={"/main"} />

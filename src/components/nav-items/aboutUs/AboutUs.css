@@ -1,0 +1,31 @@
+.about-page {
+    min-height: 300px;
+}
+
+.about-page__container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-page__title {
+    text-align: center;
+    background-color: #FD8467;
+    width: fit-content;
+    padding: 2vw 5vw;
+    font-size: 2vw;
+    border-radius: .5vw;
+    color: #fff;
+}
+
+.loader-container {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about-page__title {
+        font-size: 14px;
+    }
+}
