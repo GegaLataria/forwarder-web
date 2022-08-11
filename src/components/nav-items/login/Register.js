@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
-import { Redirect, Route } from "react-router-dom";
 import { Context } from "../../App";
-import LoggedIn from "./loggedInItems/LoggedIn";
+import Loader from "./Loader";
 import "./Register.css";
 
 const Register = () => {
@@ -9,9 +8,17 @@ const Register = () => {
 
   const [errorMessages, setErrorMessages] = useState("");
   const [registered, setRegistered] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleRegister = (event) => {
-    event.preventDefault();
+  const handleLoading = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      registerHelper();
+    }, 1000);
+  };
+
+  const registerHelper = () => {
     const defaultParcels = JSON.parse(localStorage.getItem("registered"))[0]
       .parcels;
     const defaultTransactions = JSON.parse(
@@ -54,7 +61,6 @@ const Register = () => {
         value.setLoggedInUser(array);
         window.localStorage.setItem("user", JSON.stringify(value.loggedInUser));
 
-        // <LoggedIn user={value.loggedInUser} setUser={value.setLoggedInUser} />;
         window.localStorage.setItem(
           "registered",
           JSON.stringify(newRegistered)
@@ -70,67 +76,81 @@ const Register = () => {
     }
   };
 
+  const handleRegister = (event) => {
+    event.preventDefault();
+    handleLoading();
+  };
+
   const inputChange = () => {
     setErrorMessages("");
   };
-  return (
-    <div className="login-container">
-      <form className="login-form">
-        <div className="register-form__item">
-          <p className="register-title">სახელი</p>
-          <input
-            className="login-form__item__input"
-            name="registerFirstname"
-            type={"text"}
-            onChange={inputChange}
-            required
-          ></input>
-        </div>
-        <div className="register-form__item">
-          <p className="register-title">გვარი</p>
-          <input
-            className="login-form__item__input"
-            name="registerLastname"
-            type={"text"}
-            onChange={inputChange}
-            required
-          ></input>
-        </div>
-        <div className="register-form__item">
-          <p className="register-title">ელ.ფოსტა</p>
-          <input
-            className="login-form__item__input"
-            name="registerEmail"
-            type={"email"}
-            onChange={inputChange}
-            required
-          ></input>
-        </div>
-        <div className="register-form__item">
-          <p className="register-title">პაროლი</p>
-          <input
-            className="login-form__item__input"
-            name="registerPassword"
-            type={"password"}
-            onChange={inputChange}
-            required
-          ></input>
-        </div>
-        <button onClick={handleRegister} className="register-button">
-          რეგისტრაცია
-        </button>
-        {errorMessages ? (
-          <h2
-            className={!registered ? "incorrect-message" : "success-register"}
-          >
-            {errorMessages}
-          </h2>
-        ) : (
-          ""
-        )}
-      </form>
-    </div>
-  );
+
+  const renderForm = () => {
+    return (
+      <div className="login-container">
+        <form className="login-form">
+          <div className="register-form__item">
+            <p className="register-title">სახელი</p>
+            <input
+              className="login-form__item__input"
+              name="registerFirstname"
+              type={"text"}
+              onChange={inputChange}
+              required
+            ></input>
+          </div>
+          <div className="register-form__item">
+            <p className="register-title">გვარი</p>
+            <input
+              className="login-form__item__input"
+              name="registerLastname"
+              type={"text"}
+              onChange={inputChange}
+              required
+            ></input>
+          </div>
+          <div className="register-form__item">
+            <p className="register-title">ელ.ფოსტა</p>
+            <input
+              className="login-form__item__input"
+              name="registerEmail"
+              type={"email"}
+              onChange={inputChange}
+              required
+            ></input>
+          </div>
+          <div className="register-form__item">
+            <p className="register-title">პაროლი</p>
+            <input
+              className="login-form__item__input"
+              name="registerPassword"
+              type={"password"}
+              onChange={inputChange}
+              required
+            ></input>
+          </div>
+          {!loading ? (
+            <button onClick={handleRegister} className="register-button">
+              რეგისტრაცია
+            </button>
+          ) : (
+            ""
+          )}
+          {loading ? <Loader /> : ""}
+          {errorMessages ? (
+            <h2
+              className={!registered ? "incorrect-message" : "success-register"}
+            >
+              {errorMessages}
+            </h2>
+          ) : (
+            ""
+          )}
+        </form>
+      </div>
+    );
+  };
+  return renderForm();
 };
 
 export default Register;

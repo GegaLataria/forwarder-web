@@ -96,11 +96,11 @@ const Login = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      sumbitHelper();
+      submitHelper();
     }, 1000);
   };
 
-  const sumbitHelper = () => {
+  const submitHelper = () => {
     let { uname, pass } = document.forms[0];
     const userData = registeredUsers.find((user) => user.email === uname.value);
 
@@ -154,17 +154,23 @@ const Login = () => {
               required
             ></input>
           </div>
-          <div>
+          {!loading ? (
             <input
               className="login-form__button"
               type={"submit"}
               onClick={handleSubmit}
               value="შესვლა"
             ></input>
-          </div>
-          <a className="register-button" href="/register">
-            რეგისტრაცია
-          </a>
+          ) : (
+            ""
+          )}
+          {!loading ? (
+            <a className="register-button" href="/register">
+              რეგისტრაცია
+            </a>
+          ) : (
+            ""
+          )}
 
           {loading ? <Loader /> : ""}
 
