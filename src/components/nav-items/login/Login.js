@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Context } from "../../App";
 import LoggedIn from "./loggedInItems/LoggedIn";
 import "./Login.css";
+import Loader from "./Loader";
 
 const database = [
   {
@@ -78,20 +79,28 @@ const database = [
 
 const Login = () => {
   const value = React.useContext(Context);
+  const [errorMessages, setErrorMessages] = useState("");
+  const [loading, setLoading] = useState(false);
 
   if (!JSON.parse(localStorage.getItem("registered"))) {
     window.localStorage.setItem("registered", JSON.stringify(database));
   }
 
   const registeredUsers = JSON.parse(localStorage.getItem("registered"));
-  const [errorMessages, setErrorMessages] = useState("");
 
   const inputChange = () => {
     setErrorMessages("");
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleLoading = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      sumbitHelper();
+    }, 1000);
+  };
+
+  const sumbitHelper = () => {
     let { uname, pass } = document.forms[0];
     const userData = registeredUsers.find((user) => user.email === uname.value);
 
@@ -108,6 +117,11 @@ const Login = () => {
     } else {
       setErrorMessages("არასწორი მომხმარებელი ან პაროლი");
     }
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    handleLoading();
   };
 
   useEffect(() => {
@@ -151,6 +165,8 @@ const Login = () => {
           <a className="register-button" href="/register">
             რეგისტრაცია
           </a>
+
+          {loading ? <Loader /> : ""}
 
           {!value.loggedInUser && errorMessages ? (
             <h2 className="incorrect-message">{errorMessages}</h2>
