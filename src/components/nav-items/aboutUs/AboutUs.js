@@ -10,13 +10,23 @@ const AboutUs = () => {
 
   useEffect(() => {
     const url = "https://jsonplaceholder.typicode.com/users";
-    setLoading(true);
-    axios.get(url).then(function (response) {
-      setTimeout(() => {
-        setUsers(response.data);
-        setLoading(false);
-      }, 1000);
-    });
+
+    axios
+      .get(url)
+      .then(function (response) {
+        setLoading(true);
+        setTimeout(() => {
+          setUsers(response.data);
+          setLoading(false);
+          setErrorMessage("");
+        }, 1000);
+      })
+      .catch(() => {
+        setErrorMessage("Fail to load");
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      });
   }, []);
 
   return (
@@ -29,6 +39,11 @@ const AboutUs = () => {
         <div className="about-page__container">
           <h2 className="about-page__title">ჩვენი გუნდი</h2>
         </div>
+      )}
+      {errorMessage.length > 0 ? (
+        <h2 style={{ color: "red" }}>{errorMessage}</h2>
+      ) : (
+        ""
       )}
 
       {users.map((user, i) => {
