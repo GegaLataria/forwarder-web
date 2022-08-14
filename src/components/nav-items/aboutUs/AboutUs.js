@@ -9,7 +9,7 @@ const AboutUs = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    const url = "https://jsonplaceholder.typicode.com/users";
+    const url = "https://jsonplaceholder.typicode.com/user";
 
     axios
       .get(url)
@@ -22,7 +22,7 @@ const AboutUs = () => {
         }, 1000);
       })
       .catch(() => {
-        setErrorMessage("Fail to load");
+        setErrorMessage("მონაცემები ვერ ჩაიტვირთა");
         setTimeout(() => {
           setLoading(false);
         }, 1000);
