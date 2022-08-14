@@ -9,7 +9,7 @@ const AboutUs = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    const url = "https://jsonplaceholder.typicode.com/user";
+    const url = "https://jsonplaceholder.typicode.com/users";
 
     axios
       .get(url)
