@@ -25,7 +25,7 @@ const LoggedIn = ({ user, setUser }) => {
           <div className="countries-box">
             <div className="countries-box__list">
               <div className="countries-box__list__item">
-                <h2>🇹🇷 Turkey</h2>
+                <h2>Turkey</h2>
               </div>
             </div>
           </div>
