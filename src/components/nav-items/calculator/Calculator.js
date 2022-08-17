@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Calculator.css";
 
 const Calculator = () => {
-  return <div>{buildCalculatorScreen()}</div>;
-};
+  const [lengthInput, setLengthInput] = useState();
+  const [widthInput, setWidthInput] = useState();
+  const [heightInput, setHeightInput] = useState();
+  const [total, setTotal] = useState();
 
-const handleClick = (event) => {
-  let lengthInput = Number(document.getElementById("length-input").value);
-  let widthInput = Number(document.getElementById("width-input").value);
-  let heightInput = Number(document.getElementById("height-input").value);
-  let convertToRealWeight = (lengthInput * widthInput * heightInput) / 6000;
-  let finalResult =
-    Math.round((convertToRealWeight + Number.EPSILON) * 100) / 100;
-  document.getElementById("weight-result").innerHTML = finalResult + " კგ";
-};
+  const handleClick = () => {
+    if (lengthInput && widthInput && heightInput) {
+      let convertToRealWeight = (lengthInput * widthInput * heightInput) / 6000;
+      setTotal(Math.round((convertToRealWeight + Number.EPSILON) * 100) / 100);
+    }
+  };
 
-const buildCalculatorScreen = () => {
   return (
     <div>
       <section className="calculator">
@@ -25,6 +23,7 @@ const buildCalculatorScreen = () => {
         <div className="calculator__item">
           <p>სიგრძე(სმ)</p>
           <input
+            onChange={(e) => setLengthInput(+e.target.value)}
             type="number"
             id="length-input"
             className="calculator__item__input"
@@ -34,6 +33,7 @@ const buildCalculatorScreen = () => {
         <div className="calculator__item">
           <p>სიგანე(სმ)</p>
           <input
+            onChange={(e) => setWidthInput(+e.target.value)}
             type="number"
             id="width-input"
             className="calculator__item__input"
@@ -43,6 +43,7 @@ const buildCalculatorScreen = () => {
         <div className="calculator__item">
           <p>სიმაღლე(სმ)</p>
           <input
+            onChange={(e) => setHeightInput(+e.target.value)}
             type="number"
             id="height-input"
             className="calculator__item__input"
@@ -53,7 +54,7 @@ const buildCalculatorScreen = () => {
           <button onClick={handleClick} className="calculator__button">
             გამოთვლა
           </button>
-          <p id="weight-result"></p>
+          {total ? <p id="weight-result">{total} კგ</p> : ""}
         </div>
       </section>
       <div className="calculator__title">
